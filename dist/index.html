@@ -1,0 +1,1782 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nusantara NFT</title>
+    <link rel="stylesheet" href="/dist/output.css" />
+    <link rel="stylesheet" href="/src/input.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="swiper-bundle.min.css" />
+  </head>
+  <body>
+    <!-- NAVBAR SECTION STARTED -->
+    <header class="bg-white sticky top-0 z-50">
+      <nav
+        class="relative px-4 py-4 flex justify-between items-center bg-[#1f1d1b]"
+      >
+        <a class="text-2xl" href="#">
+          <h1 class="logo text-[#E82B2B]">Nusantara NFT</h1>
+        </a>
+        <div class="">
+          <button class="navbar-burger flex items-center text-[#E82B2B] p-3">
+            <svg
+              class="block h-4 w-4 fill-current"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Mobile menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+            </svg>
+          </button>
+        </div>
+        <ul
+          class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6"
+        >
+          <li>
+            <a
+              class="text-sm font-semibold text-black hover:text-gray-500"
+              href="#"
+              >Ranking</a
+            >
+          </li>
+          <li class="text-gray-300"></li>
+          <li>
+            <a
+              class="text-sm font-semibold text-black hover:text-gray-500"
+              href="#"
+              >Collections</a
+            >
+          </li>
+          <li class="text-gray-300"></li>
+          <li>
+            <a
+              class="text-sm font-semibold text-black hover:text-gray-500"
+              href="#"
+              >Trending</a
+            >
+          </li>
+          <li class="text-gray-300"></li>
+        </ul>
+        <a
+          class="hidden lg:inline-block py-2 px-6 bg-[#E82B2B] hover:bg-[#e82b2bd0] text-sm text-white font-bold rounded-xl transition duration-200"
+          href="#"
+          >Connect to Wallet</a
+        >
+      </nav>
+      <div class="navbar-menu relative z-50 hidden">
+        <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+        <nav
+          class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r"
+        >
+          <div class="flex items-center mb-8">
+            <a class="mr-auto text-2xl" href="#">
+              <h1 class="logo text-[#E82B2B]">Nusantara NFT</h1>
+            </a>
+            <button class="navbar-close">
+              <svg
+                class="h-6 w-6 text-black cursor-pointer hover:text-gray-500"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div>
+            <ul>
+              <li class="mb-1">
+                <a
+                  class="block p-4 text-sm font-semibold text-black hover:bg-blue-50 hover:text-[#E82B2B] rounded"
+                  href="#"
+                  >Ranking</a
+                >
+              </li>
+              <li class="mb-1">
+                <a
+                  class="block p-4 text-sm font-semibold text-black hover:bg-blue-50 hover:text-[#E82B2B] rounded"
+                  href="#"
+                  >Collections</a
+                >
+              </li>
+              <li class="mb-1">
+                <a
+                  class="block p-4 text-sm font-semibold text-black hover:bg-blue-50 hover:text-[#E82B2B] rounded"
+                  href="#"
+                  >Trending</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="mt-auto">
+            <div class="pt-6">
+              <a
+                class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-[#E82B2B] hover:bg-[#e82b2bd0] rounded-xl"
+                href="#"
+                >Connect to Wallet</a
+              >
+            </div>
+            <p class="my-4 text-xs text-center text-gray-400">
+              <span>Copyright © 2024</span>
+            </p>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- NAVBAR SECTION ENDED -->
+
+    <!-- CRYPTO PRICE MARQUEE SECTION STARTED -->
+    <script
+      type="text/javascript"
+      src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"
+    ></script>
+    <div
+      id="coinmarketcap-widget-marquee"
+      coins="1,1027,825,52,5426,74,1839,2010,3890,5805"
+      currency="USD"
+      theme="light"
+      transparent="false"
+      show-symbol-logo="true"
+      class="sticky top-[90px] z-50"
+    ></div>
+    <!-- CRYPTO PRICE MARQUEE SECTION STARTED -->
+
+    <!-- SEARCH SECTION STARTED -->
+    <div class="justify-center items-center h-full mt-2 mb-4">
+      <h1
+        class="justify-center text-center font-semibold font-[mainFont] text-5xl mb-2"
+      >
+        Search for <span class="text-[#E82B2B]">NFT Here</span>
+      </h1>
+      <form class="search-bar max-w-lg mx-auto">
+        <div class="flex">
+          <label
+            for="search-dropdown"
+            class="mb-2 text-sm font-medium text-gray-900 sr-only"
+          ></label>
+          <button
+            id="dropdown-button"
+            data-dropdown-toggle="dropdown"
+            class="categories-search flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-sm font-medium text-center text-white bg-[#E82B2B] border border-[#E82B2B] rounded-s-lg hover:bg-[#E82B2B] focus:ring-4 focus:outline-none focus:ring-gray-100"
+            type="button"
+          >
+            Categories
+            <svg
+              class="w-2.5 h-2.5 ms-2.5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 10 6"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m1 1 4 4 4-4"
+              />
+            </svg>
+          </button>
+          <div
+            id="dropdown"
+            class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+          >
+            <ul
+              class="py-2 text-sm text-gray-700 dark:text-gray-200"
+              aria-labelledby="dropdown-button"
+            >
+              <li>
+                <button
+                  type="button"
+                  class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >
+                  Gaming
+                </button>
+              </li>
+              <li>
+                <button
+                  type="button"
+                  class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >
+                  Music
+                </button>
+              </li>
+              <li>
+                <button
+                  type="button"
+                  class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >
+                  PFP's
+                </button>
+              </li>
+              <li>
+                <button
+                  type="button"
+                  class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >
+                  ART
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="relative w-full">
+            <input
+              type="search"
+              id="search-dropdown"
+              class="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-e-lg border-s-gray-50 border-s-2 border border-gray-300 focus:ring-[#E82B2B] focus:border-[#E82B2B] dark:bg-gray-700 dark:border-s-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-[#E82B2B]"
+              placeholder="Search..."
+              required
+            />
+            <button
+              type="submit"
+              class="search-icon absolute top-0 end-0 p-2.5 text-sm font-medium h-full text-white bg-[#E82B2B] rounded-e-lg border border-[#E82B2B] hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700"
+            >
+              <svg
+                class="w-4 h-4"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="none"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                />
+              </svg>
+              <span class="sr-only">Search</span>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <hr />
+    <!-- SEARCH SECTION ENDED -->
+
+    <br />
+
+    <!-- HERO SECTION STARTED -->
+    <div
+      class="bg-white font-sans flex flex-col items-center justify-center mt-3"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="lg:grid lg:grid-cols-12 lg:gap-8">
+          <div
+            class="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left lg:flex lg:items-center"
+          >
+            <div class="">
+              <div class="flex flex-col items-center justify-center">
+                <a
+                  class="inline-flex px-1 py-1 gap-x-2 rounded-xl border-[#E82B2B] border-2 hover:border-[#E82B2B] items-center text-sm font-semibold text-gray-600 space-x-1"
+                  href="#"
+                >
+                  <span
+                    class="bg-[#f6f6f6] flex items-center justify-center gap-2 text-[#E82B2B] text-sm font-semibold px-2.5 py-0.5 rounded-lg"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="h-6 w-6 text-[#E82B2B]"
+                    >
+                      <path d="m3 11 18-5v12L3 14v-3z"></path>
+                      <path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"></path>
+                    </svg>
+                    New
+                  </span>
+                  <span class="text-black">Important improvements</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="h-4 w-4"
+                  >
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                  </svg>
+                </a>
+                <h1
+                  class="title text-center mt-4 md:text-8xl text-6xl font-[mainFont] font-semibold text-gray-900 sm:mt-5 sm:leading-none lg:mt-6 lg:text-5xl xl:text-6xl"
+                >
+                  <p class="sm:block text-black">Indonesian No.1</p>
+                  <span class="text-zinc-500 md:block">Most Trusted</span>
+                  <p class="text-[#E82B2B] md:block">NFT Marketplace</p>
+                </h1>
+              </div>
+              <div class="mt-5 sm:flex sm:justify-center lg:justify-start">
+                <button
+                  class="inline-flex font-[mainFont] text-3xl items-center text-white bg-[#E82B2B] justify-center rounded-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 w-full sm:w-auto"
+                >
+                  Explore Now!
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="mt-8 ml-auto sm:mt-24 lg:mt-0 lg:col-span-5">
+            <p
+              class="text-base ml-auto text-gray-800 sm:text-xl lg:text-lg xl:text-xl"
+            >
+              Explore Indonesia's rich culture through the lens of digital art
+              with our NFT platform, where every pixel holds a story, every
+              brushstroke captures the essence of tradition.
+            </p>
+            <div class="mt-12 ml-auto">
+              <div class="grid grid-cols-3 gap-6 sm:gap-6 xl:gap-8">
+                <div
+                  class="text-center sm:flex sm:items-center sm:justify-center"
+                >
+                  <div class="sm:flex-shrink-0">
+                    <div class="flow-root">
+                      <div
+                        class="border w-fit transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent hover:bg-primary/80 inline-flex items-center justify-center px-3 py-0.5 text-sm font-medium leading-5 text-[#f6f6f6] bg-[#E82B2B] rounded-full"
+                      >
+                        Vol/Day
+                      </div>
+                      <p class="text-5xl font-bold font-[mainFont] text-black">
+                        $2M+
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="text-center sm:flex sm:items-center sm:justify-center"
+                >
+                  <div class="sm:flex-shrink-0">
+                    <div class="flow-root">
+                      <div
+                        class="border w-fit transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent hover:bg-primary/80 inline-flex items-center justify-center px-3 py-0.5 text-sm font-medium leading-5 text-[#f6f6f6] bg-[#E82B2B] rounded-full"
+                      >
+                        Users
+                      </div>
+                      <p
+                        class="text-5xl font-bold ml-4 font-[mainFont] text-black"
+                      >
+                        90K+
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="text-center sm:flex sm:items-center sm:justify-center"
+                >
+                  <div class="sm:flex-shrink-0">
+                    <div class="flow-root">
+                      <div
+                        class="border w-fit transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent hover:bg-primary/80 inline-flex items-center justify-center px-3 py-0.5 text-sm font-medium leading-5 text-[#f6f6f6] bg-[#E82B2B] rounded-full"
+                      >
+                        NFT
+                      </div>
+                      <p
+                        class="text-5xl font-bold ml-4 font-[mainFont] text-black"
+                      >
+                        5K+
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-12 flex justify-center space-x-3">
+              <span
+                class="relative flex h-14 w-14 shrink-0 overflow-hidden rounded-full"
+              >
+                <img
+                  class="aspect-square h-full w-full"
+                  alt="User 1"
+                  src="https://i.seadn.io/gcs/files/32ebd6a0d7d4822e7489500e0f56837f.jpg?auto=format&dpr=1&w=384;width=40"
+                />
+              </span>
+              <span
+                class="relative flex h-14 w-14 shrink-0 overflow-hidden rounded-full"
+              >
+                <img
+                  class="aspect-square h-full w-full"
+                  alt="User 2"
+                  src="https://i.seadn.io/gae/frQs4w8F9K6ZyyWAEIXVybqQ2f2qeP1afj1ZAPQSd_ACuJ_gYPgskY9zlvB2ZqSzEfkOyGBrooEeWPUffRon229TxF_JJbPeWbwA?auto=format&dpr=1&w=1000;width=40"
+                />
+              </span>
+              <span
+                class="relative flex h-14 w-14 shrink-0 overflow-hidden rounded-full"
+              >
+                <img
+                  class="aspect-square h-full w-full"
+                  alt="User 3"
+                  src="https://i.seadn.io/gae/9l7MaM-hOB53NK6nUnDFVsGQ5KUk5qzAhgkXFac2BR1yk2XFaZ_fXJOsUiSdoCOyCy8-DU2m0lap2GglrbWK2NYVVKR9K1k5pSst?auto=format&dpr=1&w=1000;width=40"
+                />
+              </span>
+              <span
+                class="relative flex h-14 w-14 shrink-0 overflow-hidden rounded-full"
+              >
+                <img 
+                  class="aspect-square h-full w-full"
+                  alt="User 4"
+                  src="https://i.seadn.io/gae/mjfsTZ00Mh91OHinSFwBvg55fAjnUaFKs0SREiJoR_Q8E_SHx1fvSgHv1dC65LBagF6FZhDL_GRoiFXYszT6PHSjxNnh-I28QDd4sQ?auto=format&dpr=1&w=1000;width=40"
+                />
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- HERO SECTION ENDED -->
+
+    <br />
+
+    <!-- SOCIAL COMPANY SPONSORED SECTION STARTED -->
+    <div class="flex mt-5 items-center justify-center space-x-4 flex-col">
+      <p
+        class="mr-4 text-sm font-[secondFont] italic font-semibold text-gray-700"
+      >
+        Trusted by:
+      </p>
+      <br />
+      <div class="marquee-container w-full overflow-hidden">
+        <div class="marquee flex items-center">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Spotify_logo_with_text.svg/640px-Spotify_logo_with_text.svg.png"
+            alt="Company 1 Logo"
+            class="h-7 mx-8"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Coinbase.svg/2560px-Coinbase.svg.png"
+            alt="Company 2 Logo"
+            class="h-5 mx-8"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Binance_logo.svg/2560px-Binance_logo.svg.png"
+            alt="Company 3 Logo"
+            class="h-7 mx-8"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/9/93/Indodax_Logo-Blue.png"
+            alt="Company 4 Logo"
+            class="h-7 mx-8"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- SOCIAL COMPANY SPONSORED SECTION ENDED -->
+
+    <!-- TRENDING THIS WEEK SECTION STARTED-->
+    <div class="flex justify-center items-center h-full mt-5">
+      <h1 class="text-center font-semibold font-[mainFont] text-5xl text-black">
+        <span class="text-[#E82B2B]">Trending</span> This Week
+      </h1>
+    </div>
+    <div class="slide-container swiper swiper1">
+      <div class="slide-content slide-content1">
+        <div class="card-wrapper swiper-wrapper">
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <div class="card-image">
+                <img
+                  src="https://i.seadn.io/gcs/files/56e2a9f42e1d5630cbb41d8b1c5e6907.jpg?auto=format&dpr=1&w=384"
+                  alt="Karafuru"
+                  class="card-img"
+                />
+              </div>
+            </div>
+
+            <div class="card-content">
+              <h2 class="soda-name">Karafuru</h2>
+              <p class="description">Floor: 0.01 ETH</p>
+            </div>
+          </div>
+
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <div class="card-image">
+                <img
+                  src="https://i.seadn.io/gae/hrvN_ZAaUoDisM6JtJCpRKYgguthQcGKMxlt2ja-tITeMUrf-KPjw_Rqvwn0qDxNy6c9lCRw7PP-hfGlrUlyXY1OvfGPKticPJUveQ?auto=format&dpr=1&w=384"
+                  alt="MindBlowon"
+                  class="card-img"
+                />
+              </div>
+            </div>
+
+            <div class="card-content">
+              <h2 class="soda-name">Mindblowon</h2>
+              <p class="description">Floor: 0.05 ETH</p>
+            </div>
+          </div>
+
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"> </span>
+              <div class="card-image">
+                <img
+                  src="https://i.seadn.io/gae/Rp6FaltzUeR5opEtx3t5hmvWfFj8AZiNERq8TUB_9KGqe7j73UBHzN-vjd9ZZPORJlf_rHwJZaHGRpEPK9xxHhGjfEsa4EmPp6Sk_w?auto=format&dpr=1&w=384"
+                  alt="Jukiverse"
+                  class="card-img"
+                />
+              </div>
+            </div>
+
+            <div class="card-content">
+              <h2 class="soda-name">JukiVerse</h2>
+              <p class="description">Floor: 0.5 ETH</p>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"> </span>
+              <div class="card-image">
+                <img
+                  src="https://i.seadn.io/s/raw/files/ac78868f0800e396b3aec26014cb6440.png?auto=format&dpr=1&w=384"
+                  alt="Mutant Ape Yacht Club"
+                  class="card-img"
+                />
+              </div>
+            </div>
+
+            <div class="card-content">
+              <h2 class="soda-name">Mutant Ape Yacht Club</h2>
+              <p class="description">Floor: 2.5 ETH</p>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"> </span>
+              <div class="card-image">
+                <img
+                  src="https://i.seadn.io/gae/JuQHPkErFScGb7O61h69BIbhjRAX9TswDvfxXPi1t4B08HNev5jCmErr9e1sS2v_flBX6PieMLJXDSUcsUr23VLZ_df9IWksgpm3?auto=format&dpr=1&w=384"
+                  alt="Bored Ape Yacht Club"
+                  class="card-img"
+                />
+              </div>
+            </div>
+
+            <div class="card-content">
+              <h2 class="soda-name">Bored Ape Yacht Club</h2>
+              <p class="description">Floor: 5 ETH</p>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"> </span>
+              <div class="card-image">
+                <img
+                  src="https://i.seadn.io/gcs/files/c257c8183b872019da492815a0868411.jpg?auto=format&dpr=1&w=384"
+                  alt="Karafuru"
+                  class="card-img"
+                />
+              </div>
+            </div>
+
+            <div class="card-content">
+              <h2 class="soda-name">Karafuru</h2>
+              <p class="description">Floor: 0.01 ETH</p>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"> </span>
+              <div class="card-image">
+                <img
+                  src="https://i.seadn.io/s/raw/files/cbd124367d0776b60c1b8d1332b0561b.png?auto=format&dpr=1&w=1000"
+                  alt="LoudPunx"
+                  class="card-img"
+                />
+              </div>
+            </div>
+
+            <div class="card-content">
+              <h2 class="soda-name">Loud Punx</h2>
+              <p class="description">Floor: 0.8 ETH</p>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"> </span>
+              <div class="card-image">
+                <img
+                  src="https://i.seadn.io/gcs/files/abb48153cd4b02ddcfc8236cdc35622c.png?auto=format&dpr=1&w=384"
+                  alt="Coolman Universe"
+                  class="card-img"
+                />
+              </div>
+            </div>
+
+            <div class="card-content">
+              <h2 class="soda-name">Coolman Universe</h2>
+              <p class="description">Floor: 0.2 ETH</p>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"> </span>
+              <div class="card-image">
+                <img
+                  src="https://i.seadn.io/s/raw/files/05e1207b10ab26fa56dee875f8ada247.png?auto=format&dpr=1&w=384"
+                  alt="My Pet Hooligan"
+                  class="card-img"
+                />
+              </div>
+            </div>
+
+            <div class="card-content">
+              <h2 class="soda-name">My Pet Hooligan</h2>
+              <p class="description">Floor: 0.5 ETH</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="swiper-button-next swiper-nav-btn"></div>
+      <div class="swiper-button-prev swiper-nav-btn"></div> -->
+      <br />
+      <div class="swiper-pagination swiper-pagination1"></div>
+    </div>
+    <!-- TRENDING THIS WEEK SECTION ENDED-->
+
+    <!-- RANKING VOLUME STARTED -->
+    <link
+      rel="stylesheet"
+      href="https://horizon-tailwind-react-corporate-7s21b54hb-horizon-ui.vercel.app/static/css/main.d7f96858.css"
+    />
+    <div
+      class="flex flex-col justify-center items-center lg:h-[70vh] max-md:-[30vh]"
+    >
+      <div
+        class="relative flex max-w-[1040px] h-[400px] w-full flex-col rounded-[10px] bg-white"
+      >
+        <div
+          class="flex h-fit w-full items-center justify-between rounded-t-2xl bg-white px-4 pb-[20px] pt-4"
+        >
+          <h4 class="text-4xl font-semibold text-black font-[mainFont]">
+            Top Collections
+          </h4>
+          <button
+            class="rounded-md bg-[#E82B2B] px-4 py-2 font-normal text-sm text-white transition duration-200 hover:bg-red-400 active:bg-gray-200"
+          >
+            See all
+          </button>
+        </div>
+        <div
+          class="w-full bg-white overflow-x-scroll px-4 md:overflow-x-hidden"
+        >
+          <table role="table" class="w-full min-w-[900px] overflow-x-scroll">
+            <thead class="sticky top-0 bg-white">
+              <tr role="row">
+                <th
+                  colspan="1"
+                  role="columnheader"
+                  title="Toggle SortBy"
+                  style="cursor: pointer"
+                  class="text-left lg:text-center"
+                >
+                  <div
+                    class="text-black flex items-center justify-between pb-2 pt-4 uppercase tracking-wide text-sm lg:text-xs"
+                  >
+                    Rank
+                  </div>
+                </th>
+                <th
+                  colspan="1"
+                  role="columnheader"
+                  title="Toggle SortBy"
+                  style="cursor: pointer"
+                  class="text-left lg:text-center"
+                >
+                  <div
+                    class="flex items-center justify-between pb-2 pt-4 uppercase tracking-wide text-sm lg:text-xs"
+                  >
+                    Name
+                  </div>
+                </th>
+                <th
+                  colspan="1"
+                  role="columnheader"
+                  title="Toggle SortBy"
+                  style="cursor: pointer"
+                  class="text-left lg:text-center"
+                >
+                  <div
+                    class="flex items-center justify-between pb-2 pt-4 uppercase tracking-wide text-sm lg:text-xs"
+                  >
+                    Floor Price
+                  </div>
+                </th>
+                <th
+                  colspan="1"
+                  role="columnheader"
+                  title="Toggle SortBy"
+                  style="cursor: pointer"
+                  class="text-left lg:text-center"
+                >
+                  <div
+                    class="flex items-center justify-between pb-2 pt-4 uppercase tracking-wide text-sm lg:text-xs"
+                  >
+                    Volume
+                  </div>
+                </th>
+                <th
+                  colspan="1"
+                  role="columnheader"
+                  title="Toggle SortBy"
+                  style="cursor: pointer"
+                  class="text-left lg:text-center"
+                >
+                  <div
+                    class="text-black flex items-center justify-between pb-2 pt-4 uppercase tracking-wide text-sm lg:text-xs"
+                  >
+                    Rank
+                  </div>
+                </th>
+                <th
+                  colspan="1"
+                  role="columnheader"
+                  title="Toggle SortBy"
+                  style="cursor: pointer"
+                  class="text-left lg:text-center"
+                >
+                  <div
+                    class="flex items-center justify-between pb-2 pt-4 uppercase tracking-wide text-sm lg:text-xs"
+                  >
+                    Name
+                  </div>
+                </th>
+                <th
+                  colspan="1"
+                  role="columnheader"
+                  title="Toggle SortBy"
+                  style="cursor: pointer"
+                  class="text-left lg:text-center"
+                >
+                  <div
+                    class="flex items-center justify-between pb-2 pt-4 uppercase tracking-wide text-sm lg:text-xs"
+                  >
+                    Floor Price
+                  </div>
+                </th>
+                <th
+                  colspan="1"
+                  role="columnheader"
+                  title="Toggle SortBy"
+                  style="cursor: pointer"
+                  class="text-left lg:text-center"
+                >
+                  <div
+                    class="flex items-center justify-between pb-2 pt-4 uppercase tracking-wide text-sm lg:text-xs"
+                  >
+                    Volume
+                  </div>
+                </th>
+              </tr>
+            </thead>
+            <tbody role="rowgroup" class="px-4">
+              <tr role="row">
+                <td class="py-3 text-sm" role="cell">
+                  <p class="text-md font-medium text-black">1</p>
+                </td>
+                <td class="py-3 text-sm" role="cell">
+                  <div class="flex items-center gap-2">
+                    <div class="h-[30px] w-[30px] rounded-full">
+                      <img
+                        src="https://images.unsplash.com/photo-1506863530036-1efeddceb993?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2244&amp;q=80"
+                        class="h-full w-full rounded-full"
+                        alt=""
+                      />
+                    </div>
+                    <p class="text-sm font-medium text-black">@maddison_c21</p>
+                  </div>
+                </td>
+                <td class="py-3 text-sm" role="cell">
+                  <p class="text-md font-medium text-black">0.05 ETH</p>
+                </td>
+                <td class="py-3 text-sm" role="cell">
+                  <p class="text-md font-medium text-black">10 ETH</p>
+                </td>
+                <td class="py-3 text-sm" role="cell">
+                  <p class="text-md font-medium text-black">1</p>
+                </td>
+                <td class="py-3 text-sm" role="cell">
+                  <div class="flex items-center gap-2">
+                    <div class="h-[30px] w-[30px] rounded-full">
+                      <img
+                        src="https://images.unsplash.com/photo-1506863530036-1efeddceb993?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2244&amp;q=80"
+                        class="h-full w-full rounded-full"
+                        alt=""
+                      />
+                    </div>
+                    <p class="text-sm font-medium text-black">@maddison_c21</p>
+                  </div>
+                </td>
+                <td class="py-3 text-sm" role="cell">
+                  <p class="text-md font-medium text-black">0.05 ETH</p>
+                </td>
+                <td class="py-3 text-sm" role="cell">
+                  <p class="text-md font-medium text-black">10 ETH</p>
+                </td>
+              </tr>
+              <tr role="row">
+                <td class="py-3 text-sm" role="cell">
+                  <p class="text-md font-medium text-black">1</p>
+                </td>
+                <td class="py-3 text-sm" role="cell">
+                  <div class="flex items-center gap-2">
+                    <div class="h-[30px] w-[30px] rounded-full">
+                      <img
+                        src="https://images.unsplash.com/photo-1506863530036-1efeddceb993?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2244&amp;q=80"
+                        class="h-full w-full rounded-full"
+                        alt=""
+                      />
+                    </div>
+                    <p class="text-sm font-medium text-black">@maddison_c21</p>
+                  </div>
+                </td>
+                <td class="py-3 text-sm" role="cell">
+                  <p class="text-md font-medium text-black">0.05 ETH</p>
+                </td>
+                <td class="py-3 text-sm" role="cell">
+                  <p class="text-md font-medium text-black">10 ETH</p>
+                </td>
+                <td class="py-3 text-sm" role="cell">
+                  <p class="text-md font-medium text-black">1</p>
+                </td>
+                <td class="py-3 text-sm" role="cell">
+                  <div class="flex items-center gap-2">
+                    <div class="h-[30px] w-[30px] rounded-full">
+                      <img
+                        src="https://images.unsplash.com/photo-1506863530036-1efeddceb993?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2244&amp;q=80"
+                        class="h-full w-full rounded-full"
+                        alt=""
+                      />
+                    </div>
+                    <p class="text-sm font-medium text-black">@maddison_c21</p>
+                  </div>
+                </td>
+                <td class="py-3 text-sm" role="cell">
+                  <p class="text-md font-medium text-black">0.05 ETH</p>
+                </td>
+                <td class="py-3 text-sm" role="cell">
+                  <p class="text-md font-medium text-black">10 ETH</p>
+                </td>
+              </tr>
+              <tr role="row">
+                <td class="py-3 text-sm" role="cell">
+                  <p class="text-md font-medium text-black">1</p>
+                </td>
+                <td class="py-3 text-sm" role="cell">
+                  <div class="flex items-center gap-2">
+                    <div class="h-[30px] w-[30px] rounded-full">
+                      <img
+                        src="https://images.unsplash.com/photo-1506863530036-1efeddceb993?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2244&amp;q=80"
+                        class="h-full w-full rounded-full"
+                        alt=""
+                      />
+                    </div>
+                    <p class="text-sm font-medium text-black">@maddison_c21</p>
+                  </div>
+                </td>
+                <td class="py-3 text-sm" role="cell">
+                  <p class="text-md font-medium text-black">0.05 ETH</p>
+                </td>
+                <td class="py-3 text-sm" role="cell">
+                  <p class="text-md font-medium text-black">10 ETH</p>
+                </td>
+                <td class="py-3 text-sm" role="cell">
+                  <p class="text-md font-medium text-black">1</p>
+                </td>
+                <td class="py-3 text-sm" role="cell">
+                  <div class="flex items-center gap-2">
+                    <div class="h-[30px] w-[30px] rounded-full">
+                      <img
+                        src="https://images.unsplash.com/photo-1506863530036-1efeddceb993?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2244&amp;q=80"
+                        class="h-full w-full rounded-full"
+                        alt=""
+                      />
+                    </div>
+                    <p class="text-sm font-medium text-black">@maddison_c21</p>
+                  </div>
+                </td>
+                <td class="py-3 text-sm" role="cell">
+                  <p class="text-md font-medium text-black">0.05 ETH</p>
+                </td>
+                <td class="py-3 text-sm" role="cell">
+                  <p class="text-md font-medium text-black">10 ETH</p>
+                </td>
+              </tr>
+              <tr role="row">
+                <td class="py-3 text-sm" role="cell">
+                  <p class="text-md font-medium text-black">1</p>
+                </td>
+                <td class="py-3 text-sm" role="cell">
+                  <div class="flex items-center gap-2">
+                    <div class="h-[30px] w-[30px] rounded-full">
+                      <img
+                        src="https://images.unsplash.com/photo-1506863530036-1efeddceb993?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2244&amp;q=80"
+                        class="h-full w-full rounded-full"
+                        alt=""
+                      />
+                    </div>
+                    <p class="text-sm font-medium text-black">@maddison_c21</p>
+                  </div>
+                </td>
+                <td class="py-3 text-sm" role="cell">
+                  <p class="text-md font-medium text-black">0.05 ETH</p>
+                </td>
+                <td class="py-3 text-sm" role="cell">
+                  <p class="text-md font-medium text-black">10 ETH</p>
+                </td>
+                <td class="py-3 text-sm" role="cell">
+                  <p class="text-md font-medium text-black">1</p>
+                </td>
+                <td class="py-3 text-sm" role="cell">
+                  <div class="flex items-center gap-2">
+                    <div class="h-[30px] w-[30px] rounded-full">
+                      <img
+                        src="https://images.unsplash.com/photo-1506863530036-1efeddceb993?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2244&amp;q=80"
+                        class="h-full w-full rounded-full"
+                        alt=""
+                      />
+                    </div>
+                    <p class="text-sm font-medium text-black">@maddison_c21</p>
+                  </div>
+                </td>
+                <td class="py-3 text-sm" role="cell">
+                  <p class="text-md font-medium text-black">0.05 ETH</p>
+                </td>
+                <td class="py-3 text-sm" role="cell">
+                  <p class="text-md font-medium text-black">10 ETH</p>
+                </td>
+              </tr>
+              <tr role="row">
+                <td class="py-3 text-sm" role="cell">
+                  <p class="text-md font-medium text-black">1</p>
+                </td>
+                <td class="py-3 text-sm" role="cell">
+                  <div class="flex items-center gap-2">
+                    <div class="h-[30px] w-[30px] rounded-full">
+                      <img
+                        src="https://images.unsplash.com/photo-1506863530036-1efeddceb993?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2244&amp;q=80"
+                        class="h-full w-full rounded-full"
+                        alt=""
+                      />
+                    </div>
+                    <p class="text-sm font-medium text-black">@maddison_c21</p>
+                  </div>
+                </td>
+                <td class="py-3 text-sm" role="cell">
+                  <p class="text-md font-medium text-black">0.05 ETH</p>
+                </td>
+                <td class="py-3 text-sm" role="cell">
+                  <p class="text-md font-medium text-black">10 ETH</p>
+                </td>
+                <td class="py-3 text-sm" role="cell">
+                  <p class="text-md font-medium text-black">1</p>
+                </td>
+                <td class="py-3 text-sm" role="cell">
+                  <div class="flex items-center gap-2">
+                    <div class="h-[30px] w-[30px] rounded-full">
+                      <img
+                        src="https://images.unsplash.com/photo-1506863530036-1efeddceb993?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2244&amp;q=80"
+                        class="h-full w-full rounded-full"
+                        alt=""
+                      />
+                    </div>
+                    <p class="text-sm font-medium text-black">@maddison_c21</p>
+                  </div>
+                </td>
+                <td class="py-3 text-sm" role="cell">
+                  <p class="text-md font-medium text-black">0.05 ETH</p>
+                </td>
+                <td class="py-3 text-sm" role="cell">
+                  <p class="text-md font-medium text-black">10 ETH</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <hr
+      class="w-48 h-1 mx-auto my-4 bg-black border-0 rounded md:my-10"
+    />
+    <!-- RANKING VOLUME ENDED -->
+
+    <!-- NOTABLE COLLECTIONS SECTION STARTED -->
+    <div class="container swiper swiper2 lg:!w-[75%] bg-white md:!w-[100%]">
+      <div
+        class="flex h-fit w-full sm:text-center items-center justify-between rounded-t-2xl bg-white px-4 pt-4"
+      >
+        <h4 class="text-5xl font-semibold text-black font-[mainFont]">
+          Notable <span class="text-[#E82B2B]">Collections</span> 
+        </h4>
+      </div>
+
+      <div class="slide-container slide-container2 bg-white">
+        <div class="card-wrapper swiper-wrapper ">
+          <div class="card swiper-slide card-swiper-slide ">
+            <div class="image-box ">
+              <link
+                rel="stylesheet"
+                href="https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/css/main.ad49aa9b.css"
+              />
+              <div class="flex flex-col justify-center items-center">
+                <div
+                  class="!z-5 relative flex flex-col rounded-[20px] max-w-[300px] bg-white bg-clip-border shadow-3xl shadow-shadow-500 flex flex-col w-full !p-4 3xl:p-![18px] bg-white undefined"
+                >
+                  <div class="h-full w-full">
+                    <div class="relative w-full">
+                      <img
+                        src="https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/Nft3.3b3e6a4b3ada7618de6c.png"
+                        class="mb-3 h-full w-full rounded-xl 3xl:h-full 3xl:w-full"
+                        alt=""
+                      />
+                      <button
+                        class="absolute top-3 right-3 flex items-center justify-center rounded-full bg-white p-2 text-brand-500 hover:cursor-pointer"
+                      >
+                        <div
+                          class="flex h-full w-full items-center justify-center rounded-full text-xl hover:bg-gray-50"
+                        >
+                          <svg
+                            stroke="currentColor"
+                            fill="currentColor"
+                            stroke-width="0"
+                            viewBox="0 0 512 512"
+                            height="1em"
+                            width="1em"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill="none"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="32"
+                              d="M352.92 80C288 80 256 144 256 144s-32-64-96.92-64c-52.76 0-94.54 44.14-95.08 96.81-1.1 109.33 86.73 187.08 183 252.42a16 16 0 0018 0c96.26-65.34 184.09-143.09 183-252.42-.54-52.67-42.32-96.81-95.08-96.81z"
+                            ></path>
+                          </svg>
+                        </div>
+                      </button>
+                    </div>
+                    <div
+                      class="mb-3 flex items-center justify-between px-1 md:items-start"
+                    >
+                      <div class="mb-2">
+                        <p class="text-lg font-bold text-navy-700">
+                          Abstract Colors
+                        </p>
+                        <p
+                          class="mt-1 text-sm font-medium text-gray-600 md:mt-2"
+                        >
+                          By Esthera Jackson
+                        </p>
+                      </div>
+                      <div class="flex flex-row-reverse md:mt-2 lg:mt-0">
+                        <span
+                          class="z-0 ml-px inline-flex h-8 w-8 items-center justify-center rounded-full border-2 border-white bg-[#E0E5F2] text-xs text-navy-700"
+                          >+5</span
+                        ><span
+                          class="z-10 -mr-3 h-8 w-8 rounded-full border-2 border-white"
+                        >
+                          <img
+                            class="h-full w-full rounded-full object-cover"
+                            src="https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/avatar1.eeef2af6dfcd3ff23cb8.png"
+                            alt=""
+                          />
+                        </span>
+                        <span
+                          class="z-10 -mr-3 h-8 w-8 rounded-full border-2 border-white"
+                        >
+                          <img
+                            class="h-full w-full rounded-full object-cover"
+                            src="https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/avatar2.5692c39db4f8c0ea999e.png"
+                            alt=""
+                          />
+                        </span>
+                        <span
+                          class="z-10 -mr-3 h-8 w-8 rounded-full border-2 border-white"
+                        >
+                          <img
+                            class="h-full w-full rounded-full object-cover"
+                            src="https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/avatar3.9f646ac5920fa40adf00.png"
+                            alt=""
+                          />
+                        </span>
+                      </div>
+                    </div>
+                    <div
+                      class="flex items-center justify-between md:items-center lg:justify-between"
+                    >
+                      <div class="flex">
+                        <p class="!mb-0 text-sm font-bold text-brand-500">
+                          Current Bid: 0.91 <span>ETH</span>
+                        </p>
+                      </div>
+                      <button
+                        href=""
+                        class="linear rounded-[20px] bg-brand-900 px-4 py-2 text-base font-medium text-white transition duration-200 hover:bg-brand-800 active:bg-brand-700"
+                      >
+                        Place Bid
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card swiper-slide card-swiper-slide">
+            <div class="image-box">
+              <link
+                rel="stylesheet"
+                href="https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/css/main.ad49aa9b.css"
+              />
+              <div class="flex flex-col justify-center items-center">
+                <div
+                  class="!z-5 relative flex flex-col rounded-[20px] max-w-[300px] bg-white bg-clip-border shadow-3xl shadow-shadow-500 flex flex-col w-full !p-4 3xl:p-![18px] bg-white undefined"
+                >
+                  <div class="h-full w-full">
+                    <div class="relative w-full">
+                      <img
+                        src="https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/Nft3.3b3e6a4b3ada7618de6c.png"
+                        class="mb-3 h-full w-full rounded-xl 3xl:h-full 3xl:w-full"
+                        alt=""
+                      />
+                      <button
+                        class="absolute top-3 right-3 flex items-center justify-center rounded-full bg-white p-2 text-brand-500 hover:cursor-pointer"
+                      >
+                        <div
+                          class="flex h-full w-full items-center justify-center rounded-full text-xl hover:bg-gray-50"
+                        >
+                          <svg
+                            stroke="currentColor"
+                            fill="currentColor"
+                            stroke-width="0"
+                            viewBox="0 0 512 512"
+                            height="1em"
+                            width="1em"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill="none"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="32"
+                              d="M352.92 80C288 80 256 144 256 144s-32-64-96.92-64c-52.76 0-94.54 44.14-95.08 96.81-1.1 109.33 86.73 187.08 183 252.42a16 16 0 0018 0c96.26-65.34 184.09-143.09 183-252.42-.54-52.67-42.32-96.81-95.08-96.81z"
+                            ></path>
+                          </svg>
+                        </div>
+                      </button>
+                    </div>
+                    <div
+                      class="mb-3 flex items-center justify-between px-1 md:items-start"
+                    >
+                      <div class="mb-2">
+                        <p class="text-lg font-bold text-navy-700">
+                          Abstract Colors
+                        </p>
+                        <p
+                          class="mt-1 text-sm font-medium text-gray-600 md:mt-2"
+                        >
+                          By Esthera Jackson
+                        </p>
+                      </div>
+                      <div class="flex flex-row-reverse md:mt-2 lg:mt-0">
+                        <span
+                          class="z-0 ml-px inline-flex h-8 w-8 items-center justify-center rounded-full border-2 border-white bg-[#E0E5F2] text-xs text-navy-700"
+                          >+5</span
+                        ><span
+                          class="z-10 -mr-3 h-8 w-8 rounded-full border-2 border-white"
+                        >
+                          <img
+                            class="h-full w-full rounded-full object-cover"
+                            src="https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/avatar1.eeef2af6dfcd3ff23cb8.png"
+                            alt=""
+                          />
+                        </span>
+                        <span
+                          class="z-10 -mr-3 h-8 w-8 rounded-full border-2 border-white"
+                        >
+                          <img
+                            class="h-full w-full rounded-full object-cover"
+                            src="https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/avatar2.5692c39db4f8c0ea999e.png"
+                            alt=""
+                          />
+                        </span>
+                        <span
+                          class="z-10 -mr-3 h-8 w-8 rounded-full border-2 border-white"
+                        >
+                          <img
+                            class="h-full w-full rounded-full object-cover"
+                            src="https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/avatar3.9f646ac5920fa40adf00.png"
+                            alt=""
+                          />
+                        </span>
+                      </div>
+                    </div>
+                    <div
+                      class="flex items-center justify-between md:items-center lg:justify-between"
+                    >
+                      <div class="flex">
+                        <p class="!mb-0 text-sm font-bold text-brand-500">
+                          Current Bid: 0.91 <span>ETH</span>
+                        </p>
+                      </div>
+                      <button
+                        href=""
+                        class="linear rounded-[20px] bg-brand-900 px-4 py-2 text-base font-medium text-white transition duration-200 hover:bg-brand-800 active:bg-brand-700"
+                      >
+                        Place Bid
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card swiper-slide card-swiper-slide">
+            <div class="image-box">
+              <link
+                rel="stylesheet"
+                href="https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/css/main.ad49aa9b.css"
+              />
+              <div class="flex flex-col justify-center items-center">
+                <div
+                  class="!z-5 relative flex flex-col rounded-[20px] max-w-[300px] bg-white bg-clip-border shadow-3xl shadow-shadow-500 flex flex-col w-full !p-4 3xl:p-![18px] bg-white undefined"
+                >
+                  <div class="h-full w-full">
+                    <div class="relative w-full">
+                      <img
+                        src="https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/Nft3.3b3e6a4b3ada7618de6c.png"
+                        class="mb-3 h-full w-full rounded-xl 3xl:h-full 3xl:w-full"
+                        alt=""
+                      />
+                      <button
+                        class="absolute top-3 right-3 flex items-center justify-center rounded-full bg-white p-2 text-brand-500 hover:cursor-pointer"
+                      >
+                        <div
+                          class="flex h-full w-full items-center justify-center rounded-full text-xl hover:bg-gray-50"
+                        >
+                          <svg
+                            stroke="currentColor"
+                            fill="currentColor"
+                            stroke-width="0"
+                            viewBox="0 0 512 512"
+                            height="1em"
+                            width="1em"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill="none"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="32"
+                              d="M352.92 80C288 80 256 144 256 144s-32-64-96.92-64c-52.76 0-94.54 44.14-95.08 96.81-1.1 109.33 86.73 187.08 183 252.42a16 16 0 0018 0c96.26-65.34 184.09-143.09 183-252.42-.54-52.67-42.32-96.81-95.08-96.81z"
+                            ></path>
+                          </svg>
+                        </div>
+                      </button>
+                    </div>
+                    <div
+                      class="mb-3 flex items-center justify-between px-1 md:items-start"
+                    >
+                      <div class="mb-2">
+                        <p class="text-lg font-bold text-navy-700">
+                          Abstract Colors
+                        </p>
+                        <p
+                          class="mt-1 text-sm font-medium text-gray-600 md:mt-2"
+                        >
+                          By Esthera Jackson
+                        </p>
+                      </div>
+                      <div class="flex flex-row-reverse md:mt-2 lg:mt-0">
+                        <span
+                          class="z-0 ml-px inline-flex h-8 w-8 items-center justify-center rounded-full border-2 border-white bg-[#E0E5F2] text-xs text-navy-700"
+                          >+5</span
+                        ><span
+                          class="z-10 -mr-3 h-8 w-8 rounded-full border-2 border-white"
+                        >
+                          <img
+                            class="h-full w-full rounded-full object-cover"
+                            src="https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/avatar1.eeef2af6dfcd3ff23cb8.png"
+                            alt=""
+                          />
+                        </span>
+                        <span
+                          class="z-10 -mr-3 h-8 w-8 rounded-full border-2 border-white"
+                        >
+                          <img
+                            class="h-full w-full rounded-full object-cover"
+                            src="https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/avatar2.5692c39db4f8c0ea999e.png"
+                            alt=""
+                          />
+                        </span>
+                        <span
+                          class="z-10 -mr-3 h-8 w-8 rounded-full border-2 border-white"
+                        >
+                          <img
+                            class="h-full w-full rounded-full object-cover"
+                            src="https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/avatar3.9f646ac5920fa40adf00.png"
+                            alt=""
+                          />
+                        </span>
+                      </div>
+                    </div>
+                    <div
+                      class="flex items-center justify-between md:items-center lg:justify-between"
+                    >
+                      <div class="flex">
+                        <p class="!mb-0 text-sm font-bold text-brand-500">
+                          Current Bid: 0.91 <span>ETH</span>
+                        </p>
+                      </div>
+                      <button
+                        href=""
+                        class="linear rounded-[20px] bg-brand-900 px-4 py-2 text-base font-medium text-white transition duration-200 hover:bg-brand-800 active:bg-brand-700"
+                      >
+                        Place Bid
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card swiper-slide card-swiper-slide">
+            <div class="image-box">
+              <link
+                rel="stylesheet"
+                href="https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/css/main.ad49aa9b.css"
+              />
+              <div class="flex flex-col justify-center items-center">
+                <div
+                  class="!z-5 relative flex flex-col rounded-[20px] max-w-[300px] bg-white bg-clip-border shadow-3xl shadow-shadow-500 flex flex-col w-full !p-4 3xl:p-![18px] bg-white undefined"
+                >
+                  <div class="h-full w-full">
+                    <div class="relative w-full">
+                      <img
+                        src="https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/Nft3.3b3e6a4b3ada7618de6c.png"
+                        class="mb-3 h-full w-full rounded-xl 3xl:h-full 3xl:w-full"
+                        alt=""
+                      />
+                      <button
+                        class="absolute top-3 right-3 flex items-center justify-center rounded-full bg-white p-2 text-brand-500 hover:cursor-pointer"
+                      >
+                        <div
+                          class="flex h-full w-full items-center justify-center rounded-full text-xl hover:bg-gray-50"
+                        >
+                          <svg
+                            stroke="currentColor"
+                            fill="currentColor"
+                            stroke-width="0"
+                            viewBox="0 0 512 512"
+                            height="1em"
+                            width="1em"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill="none"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="32"
+                              d="M352.92 80C288 80 256 144 256 144s-32-64-96.92-64c-52.76 0-94.54 44.14-95.08 96.81-1.1 109.33 86.73 187.08 183 252.42a16 16 0 0018 0c96.26-65.34 184.09-143.09 183-252.42-.54-52.67-42.32-96.81-95.08-96.81z"
+                            ></path>
+                          </svg>
+                        </div>
+                      </button>
+                    </div>
+                    <div
+                      class="mb-3 flex items-center justify-between px-1 md:items-start"
+                    >
+                      <div class="mb-2">
+                        <p class="text-lg font-bold text-navy-700">
+                          Abstract Colors
+                        </p>
+                        <p
+                          class="mt-1 text-sm font-medium text-gray-600 md:mt-2"
+                        >
+                          By Esthera Jackson
+                        </p>
+                      </div>
+                      <div class="flex flex-row-reverse md:mt-2 lg:mt-0">
+                        <span
+                          class="z-0 ml-px inline-flex h-8 w-8 items-center justify-center rounded-full border-2 border-white bg-[#E0E5F2] text-xs text-navy-700"
+                          >+5</span
+                        ><span
+                          class="z-10 -mr-3 h-8 w-8 rounded-full border-2 border-white"
+                        >
+                          <img
+                            class="h-full w-full rounded-full object-cover"
+                            src="https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/avatar1.eeef2af6dfcd3ff23cb8.png"
+                            alt=""
+                          />
+                        </span>
+                        <span
+                          class="z-10 -mr-3 h-8 w-8 rounded-full border-2 border-white"
+                        >
+                          <img
+                            class="h-full w-full rounded-full object-cover"
+                            src="https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/avatar2.5692c39db4f8c0ea999e.png"
+                            alt=""
+                          />
+                        </span>
+                        <span
+                          class="z-10 -mr-3 h-8 w-8 rounded-full border-2 border-white"
+                        >
+                          <img
+                            class="h-full w-full rounded-full object-cover"
+                            src="https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/avatar3.9f646ac5920fa40adf00.png"
+                            alt=""
+                          />
+                        </span>
+                      </div>
+                    </div>
+                    <div
+                      class="flex items-center justify-between md:items-center lg:justify-between"
+                    >
+                      <div class="flex">
+                        <p class="!mb-0 text-sm font-bold text-brand-500">
+                          Current Bid: 0.91 <span>ETH</span>
+                        </p>
+                      </div>
+                      <button
+                        href=""
+                        class="linear rounded-[20px] bg-brand-900 px-4 py-2 text-base font-medium text-white transition duration-200 hover:bg-brand-800 active:bg-brand-700"
+                      >
+                        Place Bid
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card swiper-slide card-swiper-slide">
+            <div class="image-box">
+              <link
+                rel="stylesheet"
+                href="https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/css/main.ad49aa9b.css"
+              />
+              <div class="flex flex-col justify-center items-center">
+                <div
+                  class="!z-5 relative flex flex-col rounded-[20px] max-w-[300px] bg-white bg-clip-border shadow-3xl shadow-shadow-500 flex flex-col w-full !p-4 3xl:p-![18px] bg-white undefined"
+                >
+                  <div class="h-full w-full">
+                    <div class="relative w-full">
+                      <img
+                        src="https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/Nft3.3b3e6a4b3ada7618de6c.png"
+                        class="mb-3 h-full w-full rounded-xl 3xl:h-full 3xl:w-full"
+                        alt=""
+                      />
+                      <button
+                        class="absolute top-3 right-3 flex items-center justify-center rounded-full bg-white p-2 text-brand-500 hover:cursor-pointer"
+                      >
+                        <div
+                          class="flex h-full w-full items-center justify-center rounded-full text-xl hover:bg-gray-50"
+                        >
+                          <svg
+                            stroke="currentColor"
+                            fill="currentColor"
+                            stroke-width="0"
+                            viewBox="0 0 512 512"
+                            height="1em"
+                            width="1em"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill="none"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="32"
+                              d="M352.92 80C288 80 256 144 256 144s-32-64-96.92-64c-52.76 0-94.54 44.14-95.08 96.81-1.1 109.33 86.73 187.08 183 252.42a16 16 0 0018 0c96.26-65.34 184.09-143.09 183-252.42-.54-52.67-42.32-96.81-95.08-96.81z"
+                            ></path>
+                          </svg>
+                        </div>
+                      </button>
+                    </div>
+                    <div
+                      class="mb-3 flex items-center justify-between px-1 md:items-start"
+                    >
+                      <div class="mb-2">
+                        <p class="text-lg font-bold text-navy-700">
+                          Abstract Colors
+                        </p>
+                        <p
+                          class="mt-1 text-sm font-medium text-gray-600 md:mt-2"
+                        >
+                          By Esthera Jackson
+                        </p>
+                      </div>
+                      <div class="flex flex-row-reverse md:mt-2 lg:mt-0">
+                        <span
+                          class="z-0 ml-px inline-flex h-8 w-8 items-center justify-center rounded-full border-2 border-white bg-[#E0E5F2] text-xs text-navy-700"
+                          >+5</span
+                        ><span
+                          class="z-10 -mr-3 h-8 w-8 rounded-full border-2 border-white"
+                        >
+                          <img
+                            class="h-full w-full rounded-full object-cover"
+                            src="https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/avatar1.eeef2af6dfcd3ff23cb8.png"
+                            alt=""
+                          />
+                        </span>
+                        <span
+                          class="z-10 -mr-3 h-8 w-8 rounded-full border-2 border-white"
+                        >
+                          <img
+                            class="h-full w-full rounded-full object-cover"
+                            src="https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/avatar2.5692c39db4f8c0ea999e.png"
+                            alt=""
+                          />
+                        </span>
+                        <span
+                          class="z-10 -mr-3 h-8 w-8 rounded-full border-2 border-white"
+                        >
+                          <img
+                            class="h-full w-full rounded-full object-cover"
+                            src="https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/avatar3.9f646ac5920fa40adf00.png"
+                            alt=""
+                          />
+                        </span>
+                      </div>
+                    </div>
+                    <div
+                      class="flex items-center justify-between md:items-center lg:justify-between"
+                    >
+                      <div class="flex">
+                        <p class="!mb-0 text-sm font-bold text-brand-500">
+                          Current Bid: 0.91 <span>ETH</span>
+                        </p>
+                      </div>
+                      <button
+                        href=""
+                        class="linear rounded-[20px] bg-brand-900 px-4 py-2 text-base font-medium text-white transition duration-200 hover:bg-brand-800 active:bg-brand-700"
+                      >
+                        Place Bid
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card swiper-slide card-swiper-slide">
+            <div class="image-box">
+              <link
+                rel="stylesheet"
+                href="https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/css/main.ad49aa9b.css"
+              />
+              <div class="flex flex-col justify-center items-center">
+                <div
+                  class="!z-5 relative flex flex-col rounded-[20px] max-w-[300px] bg-white bg-clip-border shadow-3xl shadow-shadow-500 flex flex-col w-full !p-4 3xl:p-![18px] bg-white undefined"
+                >
+                  <div class="h-full w-full">
+                    <div class="relative w-full">
+                      <img
+                        src="https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/Nft3.3b3e6a4b3ada7618de6c.png"
+                        class="mb-3 h-full w-full rounded-xl 3xl:h-full 3xl:w-full"
+                        alt=""
+                      />
+                      <button
+                        class="absolute top-3 right-3 flex items-center justify-center rounded-full bg-white p-2 text-brand-500 hover:cursor-pointer"
+                      >
+                        <div
+                          class="flex h-full w-full items-center justify-center rounded-full text-xl hover:bg-gray-50"
+                        >
+                          <svg
+                            stroke="currentColor"
+                            fill="currentColor"
+                            stroke-width="0"
+                            viewBox="0 0 512 512"
+                            height="1em"
+                            width="1em"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill="none"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="32"
+                              d="M352.92 80C288 80 256 144 256 144s-32-64-96.92-64c-52.76 0-94.54 44.14-95.08 96.81-1.1 109.33 86.73 187.08 183 252.42a16 16 0 0018 0c96.26-65.34 184.09-143.09 183-252.42-.54-52.67-42.32-96.81-95.08-96.81z"
+                            ></path>
+                          </svg>
+                        </div>
+                      </button>
+                    </div>
+                    <div
+                      class="mb-3 flex items-center justify-between px-1 md:items-start"
+                    >
+                      <div class="mb-2">
+                        <p class="text-lg font-bold text-navy-700">
+                          Abstract Colors
+                        </p>
+                        <p
+                          class="mt-1 text-sm font-medium text-gray-600 md:mt-2"
+                        >
+                          By Esthera Jackson
+                        </p>
+                      </div>
+                      <div class="flex flex-row-reverse md:mt-2 lg:mt-0">
+                        <span
+                          class="z-0 ml-px inline-flex h-8 w-8 items-center justify-center rounded-full border-2 border-white bg-[#E0E5F2] text-xs text-navy-700"
+                          >+5</span
+                        ><span
+                          class="z-10 -mr-3 h-8 w-8 rounded-full border-2 border-white"
+                        >
+                          <img
+                            class="h-full w-full rounded-full object-cover"
+                            src="https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/avatar1.eeef2af6dfcd3ff23cb8.png"
+                            alt=""
+                          />
+                        </span>
+                        <span
+                          class="z-10 -mr-3 h-8 w-8 rounded-full border-2 border-white"
+                        >
+                          <img
+                            class="h-full w-full rounded-full object-cover"
+                            src="https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/avatar2.5692c39db4f8c0ea999e.png"
+                            alt=""
+                          />
+                        </span>
+                        <span
+                          class="z-10 -mr-3 h-8 w-8 rounded-full border-2 border-white"
+                        >
+                          <img
+                            class="h-full w-full rounded-full object-cover"
+                            src="https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/avatar3.9f646ac5920fa40adf00.png"
+                            alt=""
+                          />
+                        </span>
+                      </div>
+                    </div>
+                    <div
+                      class="flex items-center justify-between md:items-center lg:justify-between"
+                    >
+                      <div class="flex">
+                        <p class="!mb-0 text-sm font-bold text-brand-500">
+                          Current Bid: 0.91 <span>ETH</span>
+                        </p>
+                      </div>
+                      <button
+                        href=""
+                        class="linear rounded-[20px] bg-brand-900 px-4 py-2 text-base font-medium text-white transition duration-200 hover:bg-brand-800 active:bg-brand-700"
+                      >
+                        Place Bid
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next swiper-navBtn swiper-button-next2"></div>
+      <div class="swiper-button-prev swiper-navBtn swiper-button-prev2"></div>
+      <div class="swiper-pagination swiper-pagination2"></div>
+    </div>
+    <!-- NOTABLE COLLECTIONS SECTION STARTED -->
+
+    <br />
+    <br />
+
+    <!-- JAVASCRIPT WEBSITE STARTED -->
+    <script>
+      // Burger menus
+      document.addEventListener("DOMContentLoaded", function () {
+        // open
+        const burger = document.querySelectorAll(".navbar-burger");
+        const menu = document.querySelectorAll(".navbar-menu");
+        const coinmarketcapWidget = document.getElementById(
+          "coinmarketcap-widget-marquee"
+        );
+
+        if (burger.length && menu.length) {
+          for (var i = 0; i < burger.length; i++) {
+            burger[i].addEventListener("click", function () {
+              for (var j = 0; j < menu.length; j++) {
+                menu[j].classList.toggle("hidden");
+
+                // Tambahkan logika untuk menangani penempatan elemen div di belakang navbar saat hamburger menu aktif
+                const isActive = this.classList.contains("active");
+
+                if (isActive) {
+                  coinmarketcapWidget.classList.remove("z-0"); // Hapus kelas z-0 saat hamburger menu aktif
+                } else {
+                  coinmarketcapWidget.classList.add("z-0"); // Tambahkan kelas z-0 untuk menempatkan elemen di belakang saat hamburger menu tidak aktif
+                }
+              }
+            });
+          }
+        }
+
+        // close
+        const close = document.querySelectorAll(".navbar-close");
+        const backdrop = document.querySelectorAll(".navbar-backdrop");
+
+        if (close.length) {
+          for (var i = 0; i < close.length; i++) {
+            close[i].addEventListener("click", function () {
+              for (var j = 0; j < menu.length; j++) {
+                menu[j].classList.toggle("hidden");
+                coinmarketcapWidget.classList.remove("z-0"); // Hapus kelas z-0 saat menutup menu navbar
+              }
+            });
+          }
+        }
+
+        if (backdrop.length) {
+          for (var i = 0; i < backdrop.length; i++) {
+            backdrop[i].addEventListener("click", function () {
+              for (var j = 0; j < menu.length; j++) {
+                menu[j].classList.toggle("hidden");
+                coinmarketcapWidget.classList.remove("z-0"); // Hapus kelas z-0 saat menutup menu navbar
+              }
+            });
+          }
+        }
+      });
+    </script>
+
+    <!-- JAVASCRIPT WEBSITE ENDED -->
+
+    <!-- IONICONS JAVASCRIPT STARTED -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- IONICONS JAVASCRIPT ENDED -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="swiper-bundle.min.js"></script>
+    <script src="/src/script.js"></script>
+    <script src="/node_modules/flowbite/dist/flowbite.min.js"></script>
+  </body>
+</html>
