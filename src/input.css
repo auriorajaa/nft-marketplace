@@ -159,5 +159,17 @@ body {
 
 .swiper-button-next2,
 .swiper-button-prev2 {
-  color: #e82b2b !important;
+  color: black !important;
+}
+
+.tranding-slider-control {
+  align-items: center;
+  justify-content: center;
+}
+
+.tranding-slider-control .slider-arrow ion-icon {
+  font-size: 1.5rem;
+}
+.tranding-slider-control .slider-arrow::after {
+  content: '';
 }
