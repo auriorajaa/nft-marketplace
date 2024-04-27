@@ -1,0 +1,1407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../output.css" />
+    <link rel="stylesheet" href="../../../src/input.css" />
+    <link rel="stylesheet" href="/dist/page/detail-nft/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../../swiper-bundle.min.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  </head>
+  <body>
+    <!-- NAVBAR SECTION STARTED -->
+    <header class="bg-white sticky top-0 z-50">
+      <nav
+        class="relative px-4 py-4 flex justify-between items-center bg-[#1f1d1b]"
+      >
+        <a class="text-2xl" href="#">
+          <h1 class="logo text-[#E82B2B]">Nusantara NFT</h1>
+        </a>
+        <div class="">
+          <button class="navbar-burger flex items-center text-[#E82B2B] p-3">
+            <svg
+              class="block h-4 w-4 fill-current"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Mobile menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+            </svg>
+          </button>
+        </div>
+        <ul
+          class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6"
+        >
+          <li>
+            <a
+              class="text-sm font-semibold text-black hover:text-gray-500"
+              href="#"
+              >Ranking</a
+            >
+          </li>
+          <li class="text-gray-300"></li>
+          <li>
+            <a
+              class="text-sm font-semibold text-black hover:text-gray-500"
+              href="#"
+              >Collections</a
+            >
+          </li>
+          <li class="text-gray-300"></li>
+          <li>
+            <a
+              class="text-sm font-semibold text-black hover:text-gray-500"
+              href="#"
+              >Trending</a
+            >
+          </li>
+          <li class="text-gray-300"></li>
+        </ul>
+        <a
+          class="hidden lg:inline-block py-2 px-6 bg-[#E82B2B] hover:bg-[#e82b2bd0] text-sm text-white font-bold rounded-xl transition duration-200"
+          href="#"
+          >Connect to Wallet</a
+        >
+      </nav>
+      <div class="navbar-menu relative z-50 hidden">
+        <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+        <nav
+          class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r"
+        >
+          <div class="flex items-center mb-8">
+            <a class="mr-auto text-2xl" href="#">
+              <h1 class="logo text-[#E82B2B]">Nusantara NFT</h1>
+            </a>
+            <button class="navbar-close">
+              <svg
+                class="h-6 w-6 text-black cursor-pointer hover:text-gray-500"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div>
+            <ul>
+              <li class="mb-1">
+                <a
+                  class="block p-4 text-sm font-semibold text-black hover:bg-blue-50 hover:text-[#E82B2B] rounded"
+                  href="#"
+                  >Ranking</a
+                >
+              </li>
+              <li class="mb-1">
+                <a
+                  class="block p-4 text-sm font-semibold text-black hover:bg-blue-50 hover:text-[#E82B2B] rounded"
+                  href="#"
+                  >Collections</a
+                >
+              </li>
+              <li class="mb-1">
+                <a
+                  class="block p-4 text-sm font-semibold text-black hover:bg-blue-50 hover:text-[#E82B2B] rounded"
+                  href="#"
+                  >Trending</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="mt-auto">
+            <div class="pt-6">
+              <a
+                class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-[#E82B2B] hover:bg-[#e82b2bd0] rounded-xl"
+                href="#"
+                >Connect to Wallet</a
+              >
+            </div>
+            <p class="my-4 text-xs text-center text-gray-400">
+              <span>Copyright © 2024</span>
+            </p>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- NAVBAR SECTION ENDED -->
+
+    <!-- CRYPTO PRICE MARQUEE SECTION STARTED -->
+    <script
+      type="text/javascript"
+      src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"
+    ></script>
+    <div
+      id="coinmarketcap-widget-marquee"
+      coins="1,1027,825,52,5426,74,1839,2010,3890,5805"
+      currency="USD"
+      theme="light"
+      transparent="false"
+      show-symbol-logo="true"
+      class="sticky top-[90px] z-50"
+    ></div>
+    <!-- CRYPTO PRICE MARQUEE SECTION STARTED -->
+
+    <!-- SEARCH SECTION STARTED -->
+    <div class="justify-center items-center h-full mt-2 mb-4">
+      <h1
+        class="justify-center text-center font-semibold font-[mainFont] text-5xl mb-2"
+      >
+        Search for <span class="text-[#E82B2B]">NFT Here</span>
+      </h1>
+      <form class="search-bar max-w-lg mx-auto">
+        <div class="flex">
+          <label
+            for="search-dropdown"
+            class="mb-2 text-sm font-medium text-gray-900 sr-only"
+          ></label>
+          <button
+            id="dropdown-button"
+            data-dropdown-toggle="dropdown"
+            class="categories-search flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-sm font-medium text-center text-white bg-[#E82B2B] border border-[#E82B2B] rounded-s-lg hover:bg-[#E82B2B] focus:ring-4 focus:outline-none focus:ring-gray-100"
+            type="button"
+          >
+            Categories
+            <svg
+              class="w-2.5 h-2.5 ms-2.5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 10 6"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m1 1 4 4 4-4"
+              />
+            </svg>
+          </button>
+          <div
+            id="dropdown"
+            class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+          >
+            <ul
+              class="py-2 text-sm text-gray-700 dark:text-gray-200"
+              aria-labelledby="dropdown-button"
+            >
+              <li>
+                <button
+                  type="button"
+                  class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >
+                  Gaming
+                </button>
+              </li>
+              <li>
+                <button
+                  type="button"
+                  class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >
+                  Music
+                </button>
+              </li>
+              <li>
+                <button
+                  type="button"
+                  class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >
+                  PFP's
+                </button>
+              </li>
+              <li>
+                <button
+                  type="button"
+                  class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >
+                  ART
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="relative w-full">
+            <input
+              type="search"
+              id="search-dropdown"
+              class="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-e-lg border-s-gray-50 border-s-2 border border-gray-300 focus:ring-[#E82B2B] focus:border-[#E82B2B] dark:bg-gray-700 dark:border-s-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-[#E82B2B]"
+              placeholder="Search..."
+              required
+            />
+            <button
+              type="submit"
+              class="search-icon absolute top-0 end-0 p-2.5 text-sm font-medium h-full text-white bg-[#E82B2B] rounded-e-lg border border-[#E82B2B] hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700"
+            >
+              <svg
+                class="w-4 h-4"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="none"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                />
+              </svg>
+              <span class="sr-only">Search</span>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <hr />
+    <!-- SEARCH SECTION ENDED -->
+
+    <!-- BREADCRUMB SECTION STARTED -->
+    <nav class="flex px-4 pt-3" aria-label="Breadcrumb">
+      <ol
+        class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse"
+      >
+        <li class="inline-flex items-center">
+          <a
+            href="../../index.html"
+            class="inline-flex items-center text-sm font-medium hover:text-blue-600"
+          >
+            <svg
+              class="w-3 h-3 me-2.5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z"
+              />
+            </svg>
+            Home
+          </a>
+        </li>
+        <li aria-current="page">
+          <div class="flex items-center">
+            <svg
+              class="rtl:rotate-180 block w-3 h-3 mx-1 text-gray-400"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 6 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m1 9 4-4-4-4"
+              />
+            </svg>
+            <a
+              href="#"
+              class="ms-1 text-sm font-medium text-gray-700 hover:text-blue-600 md:ms-2 dark:text-gray-400 dark:hover:text-white"
+              >Details NFT</a
+            >
+          </div>
+        </li>
+      </ol>
+    </nav>
+    <!-- BREADCRUMB SECTION ENDED -->
+
+    <!-- NFT DETAIL SECTION STARTED-->
+    <div class="flex flex-col lg:flex-row font-[secondFont] p-3 gap-2">
+      <!-- SECTION 1 -->
+      <div class="flex md:justify-center bg-white">
+        <img
+          src="https://i.seadn.io/gcs/files/87d7d192a5528aaeab18755e07a9a8c6.jpg?auto=format&dpr=1&w=384"
+          alt=""
+          width="721"
+          height="921"
+          class="nft-image object-cover rounded-md"
+        />
+      </div>
+
+      <!-- SECTION 2 -->
+      <div class="p-2 pt-3 lg:w-full w-full">
+        <h3 class="font-semibold text-xl mb-3 flex items-center">
+          Karafuru
+          <ion-icon
+            name="checkmark-circle"
+            style="color: blue"
+            class="ml-1"
+          ></ion-icon>
+        </h3>
+        <h1 class="font-bold text-3xl">Otan #638</h1>
+        <p class="text-sm mt-2 text-blue-500">
+          Owned by
+          <span class="underline cursor-pointer">0x93920390283...</span>
+        </p>
+        <p class="text-md text-gray-700 text-justify mt-2">
+          Karafuru is home to 5,555 generative arts where colors reign supreme.
+          Leave the drab reality and enter the world of Karafuru by Museum of
+          Toys.
+        </p>
+        <div class="flex flex-row mt-3">
+          <p class="flex items-center">
+            <ion-icon name="eye-outline" class="mr-2"></ion-icon>133 Views
+          </p>
+          <p class="flex items-center ml-3">
+            <ion-icon name="heart-outline" class="mr-2"></ion-icon>3 Favorites
+          </p>
+          <p class="flex items-center ml-3">
+            <ion-icon name="cube-outline" class="mr-2"></ion-icon>PFPs
+          </p>
+        </div>
+
+        <div class="max-w-full pt-3 bg-white rounded-lg">
+          <a href="#">
+            <h5 class="mb-2 text-xl font-bold">
+              Sales end April 29, 2024 at 11:00 AM
+            </h5>
+          </a>
+          <div class="flex flex-row mt-2.5 gap-4">
+            <div class="flex flex-col items-center">
+              <h1 class="text-[#E82B2B] mb-2 text-2xl">00</h1>
+              <h2 class="font-semibold">Hours</h2>
+            </div>
+            <div class="flex flex-col items-center">
+              <h1 class="text-[#E82B2B] mb-2 text-2xl">20</h1>
+              <h2 class="font-semibold">Minutes</h2>
+            </div>
+            <div class="flex flex-col items-center">
+              <h1 class="text-[#E82B2B] mb-2 text-2xl">52</h1>
+              <h2 class="font-semibold">Seconds</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="max-w-full pt-3 bg-white rounded-lg">
+          <a href="#">
+            <p
+              class="mb-2 text-md font-medium tracking-tight text-gray-900 dark:text-white"
+            >
+              Current price
+            </p>
+          </a>
+          <div class="flex flex-row mt-2.5 gap-3 items-center">
+            <h1 class="font-bold text-3xl">0.0322 ETH</h1>
+            <p class="font-normal text-sm text-gray-800">$90.02</p>
+          </div>
+
+          <div class="flex flex-col mt-3 lg:flex-row md:flex-row items-start">
+            <button
+              type="button"
+              class="make-offer text-white bg-[#050708] hover:bg-[#050708]/80 focus:ring-4 focus:outline-none focus:ring-[#050708]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:hover:bg-[#050708]/40 dark:focus:ring-gray-600 me-2 mb-2"
+            >
+              <ion-icon name="pricetags-outline" class="mr-3"></ion-icon>
+              Make Offer
+            </button>
+
+            <button
+              type="pay-with-bitcoin button"
+              class="text-white bg-[#FF9119] hover:bg-[#FF9119]/80 focus:ring-4 focus:outline-none focus:ring-[#FF9119]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:hover:bg-[#FF9119]/80 dark:focus:ring-[#FF9119]/40 me-2 mb-2"
+            >
+              <svg
+                class="w-4 h-4 me-2 -ms-1"
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fab"
+                data-icon="bitcoin"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M504 256c0 136.1-111 248-248 248S8 392.1 8 256 119 8 256 8s248 111 248 248zm-141.7-35.33c4.937-32.1-20.19-50.74-54.55-62.57l11.15-44.7-27.21-6.781-10.85 43.52c-7.154-1.783-14.5-3.464-21.8-5.13l10.93-43.81-27.2-6.781-11.15 44.69c-5.922-1.349-11.73-2.682-17.38-4.084l.031-.14-37.53-9.37-7.239 29.06s20.19 4.627 19.76 4.913c11.02 2.751 13.01 10.04 12.68 15.82l-12.7 50.92c.76 .194 1.744 .473 2.829 .907-.907-.225-1.876-.473-2.876-.713l-17.8 71.34c-1.349 3.348-4.767 8.37-12.47 6.464 .271 .395-19.78-4.937-19.78-4.937l-13.51 31.15 35.41 8.827c6.588 1.651 13.05 3.379 19.4 5.006l-11.26 45.21 27.18 6.781 11.15-44.73a1038 1038 0 0 0 21.69 5.627l-11.11 44.52 27.21 6.781 11.26-45.13c46.4 8.781 81.3 5.239 95.99-36.73 11.84-33.79-.589-53.28-25-65.99 17.78-4.098 31.17-15.79 34.75-39.95zm-62.18 87.18c-8.41 33.79-65.31 15.52-83.75 10.94l14.94-59.9c18.45 4.603 77.6 13.72 68.81 48.96zm8.417-87.67c-7.673 30.74-55.03 15.12-70.39 11.29l13.55-54.33c15.36 3.828 64.84 10.97 56.85 43.03z"
+                ></path>
+              </svg>
+              Pay with Bitcoin
+            </button>
+
+            <button
+              type="button"
+              class="pay-button text-white !bg-[#e82b2b] hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 me-2 mb-2"
+            >
+              <svg
+                class="w-4 h-4 me-2 -ms-1 text-[#fff]"
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fab"
+                data-icon="ethereum"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 320 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z"
+                ></path>
+              </svg>
+              Pay with Ethereum
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- NFT DETAIL SECTION ENDED -->
+
+    <!-- PRICE HISTORY SECTION STARTED -->
+    <div class="flex flex-col lg:flex-row font-[secondFont] p-3">
+      <!-- OFFERS SECTION STARTED -->
+      <div class="p-2 flex flex-col gap-2">
+        <h1 class="font-semibold text-5xl font-[mainFont]">Offers History</h1>
+        <div
+          class="table-offers relative overflow-x-auto overflow-y-auto rounded-lg"
+        >
+          <table
+            class="w-full text-sm text-left rtl:text-right font-[secondFont]"
+          >
+            <thead
+              class="text-xs text-gray-700 uppercase bg-gray-50 sticky top-0"
+            >
+              <tr>
+                <th scope="col" class="px-6 py-3">Price</th>
+                <th scope="col" class="px-6 py-3">USD</th>
+                <th scope="col" class="px-6 py-3">Quantity</th>
+                <th scope="col" class="px-6 py-3">From</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr
+                class="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
+              >
+                <th
+                  scope="row"
+                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                >
+                  0.0020 WETH
+                </th>
+                <td class="px-6 py-4">$6.31</td>
+                <td class="px-6 py-4">1</td>
+                <td class="px-6 py-4">0xs3920...20</td>
+              </tr>
+              <tr
+                class="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
+              >
+                <th
+                  scope="row"
+                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                >
+                  0.0160 WETH
+                </th>
+                <td class="px-6 py-4">$50.46</td>
+                <td class="px-6 py-4">2</td>
+                <td class="px-6 py-4">0xPa20d...0c</td>
+              </tr>
+              <tr
+                class="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
+              >
+                <th
+                  scope="row"
+                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                >
+                  0.0020 WETH
+                </th>
+                <td class="px-6 py-4">$6.31</td>
+                <td class="px-6 py-4">1</td>
+                <td class="px-6 py-4">0xs3920...20</td>
+              </tr>
+              <tr
+                class="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
+              >
+                <th
+                  scope="row"
+                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                >
+                  0.0160 WETH
+                </th>
+                <td class="px-6 py-4">$50.46</td>
+                <td class="px-6 py-4">2</td>
+                <td class="px-6 py-4">0xPa20d...0c</td>
+              </tr>
+              <tr
+                class="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
+              >
+                <th
+                  scope="row"
+                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                >
+                  0.0160 WETH
+                </th>
+                <td class="px-6 py-4">$50.46</td>
+                <td class="px-6 py-4">2</td>
+                <td class="px-6 py-4">0xPa20d...0c</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <hr class="border-2" />
+
+        <div class="relative overflow-x-auto mt-3">
+          <h1 class="font-semibold text-5xl font-[mainFont]">NFT Details</h1>
+
+          <table
+            class="w-full text-sm text-left rtl:text-right font-[secondFont]"
+          >
+            <tbody>
+              <tr class="border-b border-gray-200 dark:border-gray-700">
+                <th
+                  scope="row"
+                  class="pl-3 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800"
+                >
+                  Contract Address
+                </th>
+                <td class="pl-3 py-4">0xd92390298301c3</td>
+              </tr>
+              <tr class="border-b border-gray-200 dark:border-gray-700">
+                <th
+                  scope="row"
+                  class="pl-3 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800"
+                >
+                  Token ID
+                </th>
+                <td class="px-6 py-4">930</td>
+              </tr>
+              <tr class="border-b border-gray-200 dark:border-gray-700">
+                <th
+                  scope="row"
+                  class="pl-3 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800"
+                >
+                  Token Standard
+                </th>
+                <td class="px-6 py-4">ERC-721</td>
+              </tr>
+              <tr class="border-b border-gray-200 dark:border-gray-700">
+                <th
+                  scope="row"
+                  class="pl-3 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800"
+                >
+                  Chain
+                </th>
+                <td class="px-6 py-4">Ethereum</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!-- OFFERS SECTION ENDED -->
+
+      <!-- PRICE HISTORY SECTION -->
+      <div class="lg:w-full w-full ml-3">
+        <h1 class="font-bold text-5xl font-[mainFont] my-3">Price History</h1>
+        <div class="max-w-full w-full bg-white rounded-md">
+          <div class="flex justify-between">
+            <div>
+              <h5 class="leading-none text-3xl font-bold pb-2">0.0322 ETH</h5>
+            </div>
+            <div
+              class="flex items-center px-2.5 py-0.5 text-xl text-base font-bold text-green-500 dark:text-green-500 text-center"
+            >
+              32%
+              <svg
+                class="w-3 h-3 ms-1"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 10 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 13V1m0 0L1 5m4-4 4 4"
+                />
+              </svg>
+            </div>
+          </div>
+          <div id="area-chart"></div>
+          <div
+            class="grid grid-cols-1 items-center border-gray-200 border-t dark:border-gray-700 justify-between"
+          >
+            <div class="flex justify-between items-center pt-5">
+              <!-- Button -->
+              <button
+                id="dropdownDefaultButton"
+                data-dropdown-toggle="lastDaysdropdown"
+                data-dropdown-placement="bottom"
+                class="text-sm font-medium text-gray-500 dark:text-gray-400 hover:text-gray-900 text-center inline-flex items-center dark:hover:text-white"
+                type="button"
+              >
+                Last 7 days
+                <svg
+                  class="w-2.5 m-2.5 ms-1.5"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 4 4 4-4"
+                  />
+                </svg>
+              </button>
+              <!-- Dropdown menu -->
+              <div
+                id="lastDaysdropdown"
+                class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+              >
+                <ul
+                  class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                  aria-labelledby="dropdownDefaultButton"
+                >
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >Yesterday</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >Today</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >Last 7 days</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >Last 30 days</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >Last 90 days</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <a
+                href="#"
+                class="uppercase text-sm font-semibold inline-flex items-center rounded-lg text-blue-600 hover:text-blue-700 dark:hover:text-blue-500 hover:bg-gray-100 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 px-3 py-2"
+              >
+                Users Report
+                <svg
+                  class="w-2.5 h-2.5 ms-1.5 rtl:rotate-180"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 6 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 9 4-4-4-4"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- PRICE HISTORY SECTION ENDED -->
+
+    <!-- ANOTHER COLLECTIONS SECTION STARTED -->
+    <div class="container swiper swiper3 lg:!w-[75%] bg-white md:!w-[100%]">
+      <div
+        class="flex h-fit w-full sm:text-center items-center rounded-t-2xl bg-white px-4 pt-1"
+      >
+        <h4 class="mx-auto text-5xl font-semibold text-black font-[mainFont]">
+          Another <span class="text-[#E82B2B]">Collections</span>
+        </h4>
+      </div>
+
+      <div class="slide-container slide-container3 bg-white">
+        <div class="card-wrapper swiper-wrapper font-[secondFont]">
+          <div class="card swiper-slide card-swiper-slide md:!w-fit">
+            <div class="image-box">
+              <div class="flex justify-center items-center">
+                <div
+                  class="w- p-6 bg-white rounded-xl hover:scale-105 transition-all transform duration-500"
+                >
+                  <img
+                    class="w-64 h-58 object-cover rounded-md"
+                    src="https://i.seadn.io/gae/wet23w1dMdpoHuacS5GTNLc7S2T8qzrnJhhgN_O5o5vwuGs_wtMrY_cbXiRRD5ZwTOYnYO35yhSKqpjp6fEjpkFleWb71z0p2OhD1A?auto=format&dpr=1&w=384"
+                    alt=""
+                  />
+                  <div class="mt-4">
+                    <h1 class="text-2xl font-bold text-gray-700">
+                      Jukiverse #325
+                    </h1>
+                    <div class="mt-4 mb-2 flex justify-between pr-2">
+                      <div class="flex-col">
+                        <p>Floor Price</p>
+                        <button class="block text-lg font-bold cursor-auto">
+                          0.56 ETH
+                        </button>
+                      </div>
+                      <div class="flex-col">
+                        <p>Last Sale</p>
+                        <button class="block text-lg font-bold cursor-auto">
+                          0.8 ETH
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card swiper-slide card-swiper-slide md:!w-fit">
+            <div class="image-box">
+              <div class="flex justify-center items-center">
+                <div
+                  class="w- p-6 bg-white rounded-xl hover:scale-105 transition-all transform duration-500"
+                >
+                  <img
+                    class="w-64 h-58 object-cover rounded-md"
+                    src="https://i.seadn.io/gcs/files/d1b9b29bbf2e71788dd1b6f7ed988f4a.jpg?auto=format&dpr=1&w=384"
+                    alt=""
+                  />
+                  <div class="mt-4">
+                    <h1 class="text-2xl font-bold text-gray-700">
+                      Ku'Roi #115
+                    </h1>
+                    <div class="mt-4 mb-2 flex justify-between pr-2">
+                      <div class="flex-col">
+                        <p>Floor Price</p>
+                        <button class="block text-lg font-bold cursor-auto">
+                          0.90 ETH
+                        </button>
+                      </div>
+                      <div class="flex-col">
+                        <p>Last Sale</p>
+                        <button class="block text-lg font-bold cursor-auto">
+                          0.55 ETH
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card swiper-slide card-swiper-slide md:!w-fit">
+            <div class="image-box">
+              <div class="flex justify-center items-center">
+                <div
+                  class="w- p-6 bg-white rounded-xl hover:scale-105 transition-all transform duration-500"
+                >
+                  <img
+                    class="w-64 h-58 object-cover rounded-md"
+                    src="https://i.seadn.io/gae/m-P30fYNRuRQ-2gHGuRosD_anjJqnKw7xBpGfOdW9UyJqd3gwJjHq5e_C0WOB8M6gpvEq-wizUr88B9B9SakAelPay0SKbdZyTdcUw?auto=format&dpr=1&w=384"
+                    alt=""
+                  />
+                  <div class="mt-4">
+                    <h1 class="text-2xl font-bold text-gray-700">
+                      Weirdo #115
+                    </h1>
+                    <div class="mt-4 mb-2 flex justify-between pr-2">
+                      <div class="flex-col">
+                        <p>Floor Price</p>
+                        <button class="block text-lg font-bold cursor-auto">
+                          2 ETH
+                        </button>
+                      </div>
+                      <div class="flex-col">
+                        <p>Last Sale</p>
+                        <button class="block text-lg font-bold cursor-auto">
+                          2.55 ETH
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card swiper-slide card-swiper-slide md:!w-fit">
+            <div class="image-box">
+              <div class="flex justify-center items-center">
+                <div
+                  class="w- p-6 bg-white rounded-xl hover:scale-105 transition-all transform duration-500"
+                >
+                  <img
+                    class="w-64 h-58 object-cover rounded-md"
+                    src="https://i.seadn.io/gae/H8Si33ZHzhkcOkaIMeW-1nkAvn6ix9vKuVvoRG_Xltu__zW4xCI1VEtNRSfMYdvCXtlkLrb9O7EPyF_XrZ7iheQ4XGNXbsQ7fbW7wQ?auto=format&dpr=1&w=384"
+                    alt=""
+                  />
+                  <div class="mt-4">
+                    <h1 class="text-2xl font-bold text-gray-700">
+                      Jukiverse #815
+                    </h1>
+                    <div class="mt-4 mb-2 flex justify-between pr-2">
+                      <div class="flex-col">
+                        <p>Floor Price</p>
+                        <button class="block text-lg font-bold cursor-auto">
+                          0.005 ETH
+                        </button>
+                      </div>
+                      <div class="flex-col">
+                        <p>Last Sale</p>
+                        <button class="block text-lg font-bold cursor-auto">
+                          0.01 ETH
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card swiper-slide card-swiper-slide md:!w-fit">
+            <div class="image-box">
+              <div class="flex justify-center items-center">
+                <div
+                  class="w- p-6 bg-white rounded-xl hover:scale-105 transition-all transform duration-500"
+                >
+                  <img
+                    class="w-64 h-58 object-cover rounded-md"
+                    src="https://i.seadn.io/gae/eQnD1UIvTy-lNho7g5XSf1EjQajCf6cm50X-H-cS8wYv-N8pHGSi15kBnzzkdcmRpppphPUDmRyiFQE1lZohF3RGqKj2ssRXrNoLmes?auto=format&dpr=1&w=384"
+                    alt=""
+                  />
+                  <div class="mt-4">
+                    <h1 class="text-2xl font-bold text-gray-700">
+                      Gojira #115
+                    </h1>
+                    <div class="mt-4 mb-2 flex justify-between pr-2">
+                      <div class="flex-col">
+                        <p>Floor Price</p>
+                        <button class="block text-lg font-bold cursor-auto">
+                          0.5 ETH
+                        </button>
+                      </div>
+                      <div class="flex-col">
+                        <p>Last Sale</p>
+                        <button class="block text-lg font-bold cursor-auto">
+                          0.55 ETH
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card swiper-slide card-swiper-slide md:!w-fit">
+            <div class="image-box">
+              <div class="flex justify-center items-center">
+                <div
+                  class="w- p-6 bg-white rounded-xl hover:scale-105 transition-all transform duration-500"
+                >
+                  <img
+                    class="w-64 h-58 object-cover rounded-md"
+                    src="https://i.seadn.io/s/raw/files/5372b391e4a812ad38261bca6f24f58b.png?auto=format&dpr=1&w=384"
+                    alt=""
+                  />
+                  <div class="mt-4">
+                    <h1 class="text-2xl font-bold text-gray-700">
+                      LoudPunx #115
+                    </h1>
+                    <div class="mt-4 mb-2 flex justify-between pr-2">
+                      <div class="flex-col">
+                        <p>Floor Price</p>
+                        <button class="block text-lg font-bold cursor-auto">
+                          0.56 ETH
+                        </button>
+                      </div>
+                      <div class="flex-col">
+                        <p>Last Sale</p>
+                        <button class="block text-lg font-bold cursor-auto">
+                          0.55 ETH
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tranding-slider-control">
+        <div
+          class="swiper-button-next swiper-navBtn swiper-button-next3 slider-arrow"
+        >
+          <ion-icon name="arrow-forward-circle" class="md:!hidden"></ion-icon>
+        </div>
+        <div
+          class="swiper-button-prev swiper-navBtn swiper-button-prev3 slider-arrow"
+        >
+          <ion-icon name="arrow-back-circle" class="md:!hidden"></ion-icon>
+        </div>
+        <div class="swiper-pagination swiper-pagination3"></div>
+      </div>
+    </div>
+    <!-- ANOTHER COLLECTIONS SECTION ENDED -->
+
+    <link
+      rel="stylesheet"
+      href="https://horizon-tailwind-react-corporate-7s21b54hb-horizon-ui.vercel.app/static/css/main.d7f96858.css"
+    />
+
+    <!-- FOOTER SECTION STARTED -->
+    <footer class="bg-white">
+      <div
+        class="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8"
+      >
+        <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+          <div>
+            <div class="font-[mainFont] text-4xl">
+              <h1 class="text-[#E82B2B]">Nusantara NFT</h1>
+            </div>
+
+            <p class="mt-4 max-w-xs text-gray-500">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse non
+              cupiditate quae nam molestias.
+            </p>
+
+            <ul class="mt-8 flex gap-6">
+              <li>
+                <a
+                  href="#"
+                  rel="noreferrer"
+                  target="_blank"
+                  class="text-gray-700 transition hover:opacity-75"
+                >
+                  <span class="sr-only">Facebook</span>
+
+                  <svg
+                    class="h-6 w-6"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  rel="noreferrer"
+                  target="_blank"
+                  class="text-gray-700 transition hover:opacity-75"
+                >
+                  <span class="sr-only">Instagram</span>
+
+                  <svg
+                    class="h-6 w-6"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  rel="noreferrer"
+                  target="_blank"
+                  class="text-gray-700 transition hover:opacity-75"
+                >
+                  <span class="sr-only">Twitter</span>
+
+                  <svg
+                    class="h-6 w-6"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
+                    />
+                  </svg>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  rel="noreferrer"
+                  target="_blank"
+                  class="text-gray-700 transition hover:opacity-75"
+                >
+                  <span class="sr-only">GitHub</span>
+
+                  <svg
+                    class="h-6 w-6"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  rel="noreferrer"
+                  target="_blank"
+                  class="text-gray-700 transition hover:opacity-75"
+                >
+                  <span class="sr-only">Dribbble</span>
+
+                  <svg
+                    class="h-6 w-6"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="grid grid-cols-4 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4"
+          >
+            <div>
+              <p class="font-medium text-gray-900">Services</p>
+
+              <ul class="mt-6 space-y-4 text-sm">
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75">
+                    1on1 Coaching
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75">
+                    Company Review
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75">
+                    Accounts Review
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75">
+                    HR Consulting
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75">
+                    SEO Optimisation
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <p class="font-medium text-gray-900">Company</p>
+
+              <ul class="mt-6 space-y-4 text-sm">
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75">
+                    About
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75">
+                    Meet the Team
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75">
+                    Accounts Review
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <p class="font-medium text-gray-900">Helpful Links</p>
+
+              <ul class="mt-6 space-y-4 text-sm">
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75">
+                    Contact
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75">
+                    FAQs
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75">
+                    Live Chat
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <p class="font-medium text-gray-900">Legal</p>
+
+              <ul class="mt-6 space-y-4 text-sm">
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75">
+                    Accessibility
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75">
+                    Returns Policy
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75">
+                    Refund Policy
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75">
+                    Hiring Statistics
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <p class="text-xs text-gray-500">
+          &copy; 2022. Company Name. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <!-- FOOTER SECTION ENDED -->
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // open
+        const burger = document.querySelectorAll(".navbar-burger");
+        const menu = document.querySelectorAll(".navbar-menu");
+        const coinmarketcapWidget = document.getElementById(
+          "coinmarketcap-widget-marquee"
+        );
+
+        if (burger.length && menu.length) {
+          for (var i = 0; i < burger.length; i++) {
+            burger[i].addEventListener("click", function () {
+              for (var j = 0; j < menu.length; j++) {
+                menu[j].classList.toggle("hidden");
+
+                // Tambahkan logika untuk menangani penempatan elemen div di belakang navbar saat hamburger menu aktif
+                const isActive = this.classList.contains("active");
+
+                if (isActive) {
+                  coinmarketcapWidget.classList.remove("z-0"); // Hapus kelas z-0 saat hamburger menu aktif
+                } else {
+                  coinmarketcapWidget.classList.add("z-0"); // Tambahkan kelas z-0 untuk menempatkan elemen di belakang saat hamburger menu tidak aktif
+                }
+              }
+            });
+          }
+        }
+
+        // close
+        const close = document.querySelectorAll(".navbar-close");
+        const backdrop = document.querySelectorAll(".navbar-backdrop");
+
+        if (close.length) {
+          for (var i = 0; i < close.length; i++) {
+            close[i].addEventListener("click", function () {
+              for (var j = 0; j < menu.length; j++) {
+                menu[j].classList.toggle("hidden");
+                coinmarketcapWidget.classList.remove("z-0"); // Hapus kelas z-0 saat menutup menu navbar
+              }
+            });
+          }
+        }
+
+        if (backdrop.length) {
+          for (var i = 0; i < backdrop.length; i++) {
+            backdrop[i].addEventListener("click", function () {
+              for (var j = 0; j < menu.length; j++) {
+                menu[j].classList.toggle("hidden");
+                coinmarketcapWidget.classList.remove("z-0"); // Hapus kelas z-0 saat menutup menu navbar
+              }
+            });
+          }
+        }
+      });
+
+      const options = {
+        chart: {
+          height: "100%",
+          maxWidth: "100%",
+          type: "area",
+          fontFamily: "Inter, sans-serif",
+          dropShadow: {
+            enabled: false,
+          },
+          toolbar: {
+            show: false,
+          },
+        },
+        tooltip: {
+          enabled: true,
+          x: {
+            show: false,
+          },
+        },
+        fill: {
+          type: "gradient",
+          gradient: {
+            opacityFrom: 0.55,
+            opacityTo: 0,
+            shade: "#1C64F2",
+            gradientToColors: ["#1C64F2"],
+          },
+        },
+        dataLabels: {
+          enabled: false,
+        },
+        stroke: {
+          width: 6,
+        },
+        grid: {
+          show: false,
+          strokeDashArray: 4,
+          padding: {
+            left: 2,
+            right: 2,
+            top: 0,
+          },
+        },
+        series: [
+          {
+            name: "Floor price (ETH)",
+            data: [0.002, 0.016, 0.0017, 0.06, 0.023, 0.0322],
+            color: "#1A56DB",
+          },
+        ],
+        xaxis: {
+          categories: [
+            "01 February",
+            "02 February",
+            "03 February",
+            "04 February",
+            "05 February",
+            "06 February",
+            "07 February",
+          ],
+          labels: {
+            show: false,
+          },
+          axisBorder: {
+            show: false,
+          },
+          axisTicks: {
+            show: false,
+          },
+        },
+        yaxis: {
+          show: false,
+        },
+      };
+
+      if (
+        document.getElementById("area-chart") &&
+        typeof ApexCharts !== "undefined"
+      ) {
+        const chart = new ApexCharts(
+          document.getElementById("area-chart"),
+          options
+        );
+        chart.render();
+      }
+    </script>
+
+    <!-- IONICONS JAVASCRIPT STARTED -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- IONICONS JAVASCRIPT ENDED -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="../../swiper-bundle.min.js"></script>
+    <script src="/src/script.js"></script>
+    <script src="../../../node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  </body>
+</html>

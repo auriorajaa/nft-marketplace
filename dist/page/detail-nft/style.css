@@ -1,0 +1,30 @@
+.pay-button {
+  background-color: #e82b2b !important;
+}
+
+.pay-button:hover {
+  background-color: #e82b2bcb !important;
+}
+
+.pay-with-bitcoin {
+  background-color: #ff9119 !important;
+}
+
+.make-offer {
+  background-color: #050708 !important;
+}
+
+.make-offer:hover {
+  background-color: #050708bb !important;
+}
+
+.table-offers {
+  overflow-y: auto !important;
+  overflow-x: auto !important;
+  max-height: 21rem;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: black !important;
+}
