@@ -27,6 +27,14 @@ body {
   font-size: 40px;
 }
 
+.connect-to-wallet {
+  background: #e82b2b !important;
+}
+
+.connect-to-wallet:hover {
+  background-color: #e82b2bd0 !important;
+}
+
 /* .title {
   font-size: 90px;
 } */
