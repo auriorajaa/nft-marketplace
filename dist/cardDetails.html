@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Details-Nusantara NFT</title>
+    <link rel="stylesheet" href="/dist/output.css" />
+    <link rel="stylesheet" href="/src/input.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="swiper-bundle.min.css" />
+    <link rel="stylesheet"
+        href="https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/css/main.ad49aa9b.css" />
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+</head>
+
+<body>
+    <!-- NAVBAR SECTION STARTED -->
+    <header class="bg-white sticky top-0 z-50">
+        <nav class="relative px-4 py-4 flex justify-between items-center bg-[#1f1d1b]">
+            <a class="text-2xl" href="#">
+                <h1 class="logo text-[#E82B2B]">Nusantara NFT</h1>
+            </a>
+            <ul>
+                <div class="flex items-center">
+                    <a class="mr-auto text-2xl" href="#">
+                        <h1 class="logo text-[#E82B2B]">Nusantara NFT</h1>
+                    </a>
+                </div>
+                <li class="mb-1">
+                    <a class="block p-4 text-sm font-semibold text-black hover:bg-blue-50 hover:text-[#E82B2B] rounded"
+                        href="#">Ranking</a>
+                </li>
+                <li class="mb-1">
+                    <a class="block p-4 text-sm font-semibold text-black hover:bg-blue-50 hover:text-[#E82B2B] rounded"
+                        href="#">Collections</a>
+                </li>
+                <li class="mb-8">
+                    <a class="block p-4 text-sm font-semibold text-black hover:bg-blue-50 hover:text-[#E82B2B] rounded"
+                        href="#">Trending</a>
+                </li>
+                <div class="mt-20">
+                    <div class="pt-6">
+                        <a class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-[#E82B2B] hover:bg-[#e82b2bd0] rounded-xl"
+                            href="#">Connect to Wallet</a>
+                    </div>
+                    <p class="my-4 text-xs text-center text-gray-400">
+                        <span>Copyright © 2024</span>
+                    </p>
+                </div>
+            </ul>
+
+            <div class="">
+                <!-- untuk membuat Hamburger Menu-->
+                <div for="menu-toggle" class="menu-toggle flex items-center">
+                    <input id="menu-toggle" type="checkbox">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- NAVBAR SECTION ENDED -->
+    <main class="flex flex-wrap justify-center bg-gray-900">
+        <!-- Konten artikel -->
+        <div id="content" class="w-full md:w-3/4 p-3">
+            <article class="nft content-card rounded-lg text-white bg-gray-200">
+                <header class="flex justify-between h-0 w-full items-center bg-elevation-1 p-3 font-medium">
+                    <div class="flex items-center">
+                        <div class="flex items-center">
+                            <div class="flex mr-1">
+                                <button class="inline-flex items-center border-0 bg-inherit font-[inherit] text-[100%] sc-52181046-0 crHeih" type="button" data-id="UnstyledButton" aria-label="Base logo">
+                                    <svg fill="white" viewBox="0 0 111 111" xmlns="http://www.w3.org/2000/svg" style="width: 20px; height: 20px;">
+                                        <path d="M54.921 110.034C85.359 110.034 110.034 85.402 110.034 55.017C110.034 24.6319 85.359 0 54.921 0C26.0432 0 2.35281 22.1714 0 50.3923H72.8467V59.6416H3.9565e-07C2.35281 87.8625 26.0432 110.034 54.921 110.034Z" fill="black"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex ml-auto mr-2 items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                          </svg>
+                          
+                    </div>
+                    <div class="flex items-center">
+                        <p class="text-xs leading-xs font-semibold text-secondary pr-2" data-id="TextBody">
+                            <div class="flex flex-col justify-center ml-1 text-black mr-2">3</div>
+                        </p>                        
+                        <div class="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                              </svg>
+                        </div>
+                    </div>
+                </header>
+                
+                <figure class="text-center">
+                    <img src="https://i.seadn.io/gae/Rp6FaltzUeR5opEtx3t5hmvWfFj8AZiNERq8TUB_9KGqe7j73UBHzN-vjd9ZZPORJlf_rHwJZaHGRpEPK9xxHhGjfEsa4EmPp6Sk_w?auto=format&dpr=1&w=384" class="w-64 mx-auto rounded-md" alt="Penyusun Gambar">
+                </figure>
+            </article>
+            
+            <section class="item--desc mt-3">
+                <div class="max-w-md mx-auto bg-gray-200 rounded-xl shadow-md overflow-hidden" style="padding: 20px; border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
+                    <div class="Panel--alwaysOpen Panel--isOpen Panel--isFramed item--description-panel sc-31790e4e-0 FHtKk" data-testid="Panel">
+                        <div class="Panel--panel sc-45c68a3a-3 hFgFWd">
+                            <div class="flex items-center border-b border-gray-300 pb-3 mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
+                                </svg>
+                                <h3 class="text-md leading-md font-semibold ml-4" data-id="TextBody">Description</h3>
+                            </div>
+                            <div aria-labelledby="Header assets-item-description" class="Panel--body sc-beff130f-0 sc-45c68a3a-1 hksMfk CeZjf border-b border-gray-300" id="Body assets-item-description" role="region">
+                                <div class="Panel--content-container" style="height: initial; max-height: 200px; overflow: auto;">
+                                    <div class="item--description Panel--isContentPadded">
+                                        <section class="item--creator">
+                                            <div class="media-greaterThanOrEqual-md">
+                                                <div class="flex items-center">
+                                                    <span class="text-md leading-md" data-id="TextBody">By&nbsp;</span>
+                                                    <span class="sc-beff130f-0 hksMfk" aria-expanded="false">
+                                                        <a class="no-underline cursor-pointer text-interactive-primary hover:text-interactive-primary-hover disabled:pointer-events-none disabled:opacity-40" aria-disabled="false" href="/castercats/created">
+                                                            <span class="text-md leading-md font-semibold sc-b6bd9c33-0 hjUKXf" data-id="TextBody">Gaspack-Deployer</span>
+                                                        </a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </section>
+                                        <div class="flex flex-col item--description-text">
+                                            <div class="[&amp;>*:mt-0]">
+                                                <div class="sc-b700f7f0-0 dOpGyH">
+                                                    <p class="text-md leading-md sc-95bc8448-0 kPeqty text-inherit whitespace-pre-wrap mb-4" data-id="TextBody">The Jukiverse is a world for 3456 Jukis to come together and embark on an adventure together. We are Jukis and the adventure has begun.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-box max-w-md mx-auto bg-gray-200 shadow-md overflow-hidden" style="padding-left: 20px; padding-right: 20px;">
+                    <div class="info-tittle flex border-b border-gray-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" />
+                          </svg>
+                          <h3 class="text-md leading-md font-semibold ml-4 mb-4" data-id="TextBody">Traits</h3>
+                    </div>
+                    <div class="info-content border-b border-gray-300">
+                        <div class="container mx-auto px-1" style="padding-top: 10px; padding-bottom: 10px;">
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+                                <!-- Kotak 1 -->
+                                <div class="box bg-white rounded-xl shadow-md overflow-hidden">
+                                    <!-- Konten kotak -->
+                                    <div class="p-4">
+                                        <div class="text-xs leading-xs font-semibold uppercase text-secondary text-center">
+                                            <div class="tabindex="-1">Background</div>
+                                        </div>
+                                        <div class="flex items-center justify-center">
+                                            <div class="text-sm leading-sm font-semibold max-w-[70%] py-1" data-testid="Property--value">
+                                                <div class="tabindex="-1">Tosca</div>
+                                            </div>
+                                            <span class="text-sm leading-sm flex-none pl-1 text-secondary">11%</span>
+                                        </div>
+                                        <div class="text-sm leading-sm text-secondary">
+                                            <div class="tabindex="-1">Floor: <span class="text-sm leading-sm text-secondary"><span>0.008 </span><span>ETH</span></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Kotak 2 -->
+                                <div class="box bg-white rounded-xl shadow-md overflow-hidden">
+                                    <!-- Konten kotak -->
+                                    <div class="p-4">
+                                        <div class="text-xs leading-xs font-semibold uppercase text-secondary text-center">
+                                            <div class="tabindex="-1">Bag</div>
+                                        </div>
+                                        <div class="flex items-center justify-center">
+                                            <div class="text-sm leading-sm font-semibold max-w-[70%] py-1" data-testid="Property--value">
+                                                <div class="tabindex="-1">Tosca</div>
+                                            </div>
+                                            <span class="text-sm leading-sm flex-none pl-1 text-secondary">0.98%</span>
+                                        </div>
+                                        <div class="text-sm leading-sm text-secondary">
+                                            <div class="tabindex="-1">Floor: <span class="text-sm leading-sm text-secondary"><span>0.063 </span><span>ETH</span></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Kotak 3 -->
+                                <div class="box bg-white rounded-xl shadow-md overflow-hidden">
+                                    <!-- Konten kotak -->
+                                    <div class="p-4">
+                                        <div class="text-xs leading-xs font-semibold uppercase text-secondary text-center">
+                                            <div class="tabindex="-1">Background</div>
+                                        </div>
+                                        <div class="flex items-center justify-center">
+                                            <div class="text-sm leading-sm font-semibold max-w-[70%] py-1" data-testid="Property--value">
+                                                <div class="tabindex="-1">Arc</div>
+                                            </div>
+                                            <span class="text-sm leading-sm flex-none pl-1 text-secondary">100%</span>
+                                        </div>
+                                        <div class="text-sm leading-sm text-secondary">
+                                            <div class="tabindex="-1">Floor: <span class="text-sm leading-sm text-secondary"><span>0.02 </span><span>ETH</span></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Kotak 4 -->
+                                <div class="box bg-white rounded-xl shadow-md overflow-hidden">
+                                    <!-- Konten kotak -->
+                                    <div class="p-4">
+                                        <div class="text-xs leading-xs font-semibold uppercase text-secondary text-center">
+                                            <div class="tabindex="-1">Background</div>
+                                        </div>
+                                        <div class="flex items-center justify-center">
+                                            <div class="text-sm leading-sm font-semibold max-w-[70%] py-1" data-testid="Property--value">
+                                                <div class="tabindex="-1">Arc</div>
+                                            </div>
+                                            <span class="text-sm leading-sm flex-none pl-1 text-secondary">100%</span>
+                                        </div>
+                                        <div class="text-sm leading-sm text-secondary">
+                                            <div class="tabindex="-1">Floor: <span class="text-sm leading-sm text-secondary"><span>0.02 </span><span>ETH</span></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Kotak 5 -->
+                                <div class="box bg-white rounded-xl shadow-md overflow-hidden">
+                                    <!-- Konten kotak -->
+                                    <div class="p-4">
+                                        <div class="text-xs leading-xs font-semibold uppercase text-secondary text-center">
+                                            <div class="tabindex="-1">Background</div>
+                                        </div>
+                                        <div class="flex items-center justify-center">
+                                            <div class="text-sm leading-sm font-semibold max-w-[70%] py-1" data-testid="Property--value">
+                                                <div class="tabindex="-1">Arc</div>
+                                            </div>
+                                            <span class="text-sm leading-sm flex-none pl-1 text-secondary">100%</span>
+                                        </div>
+                                        <div class="text-sm leading-sm text-secondary">
+                                            <div class="tabindex="-1">Floor: <span class="text-sm leading-sm text-secondary"><span>0.02 </span><span>ETH</span></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Kotak 6 -->
+                                <div class="box bg-white rounded-xl shadow-md overflow-hidden">
+                                    <!-- Konten kotak -->
+                                    <div class="p-4">
+                                        <div class="text-xs leading-xs font-semibold uppercase text-secondary text-center">
+                                            <div class="tabindex="-1">Background</div>
+                                        </div>
+                                        <div class="flex items-center justify-center">
+                                            <div class="text-sm leading-sm font-semibold max-w-[70%] py-1" data-testid="Property--value">
+                                                <div class="tabindex="-1">Arc</div>
+                                            </div>
+                                            <span class="text-sm leading-sm flex-none pl-1 text-secondary">100%</span>
+                                        </div>
+                                        <div class="text-sm leading-sm text-secondary">
+                                            <div class="tabindex="-1">Floor: <span class="text-sm leading-sm text-secondary"><span>0.02 </span><span>ETH</span></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Kotak 7 -->
+                                <div class="box bg-white rounded-xl shadow-md overflow-hidden">
+                                    <!-- Konten kotak -->
+                                    <div class="p-4">
+                                        <div class="text-xs leading-xs font-semibold uppercase text-secondary text-center">
+                                            <div class="tabindex="-1">Background</div>
+                                        </div>
+                                        <div class="flex items-center justify-center">
+                                            <div class="text-sm leading-sm font-semibold max-w-[70%] py-1" data-testid="Property--value">
+                                                <div class="tabindex="-1">Arc</div>
+                                            </div>
+                                            <span class="text-sm leading-sm flex-none pl-1 text-secondary">100%</span>
+                                        </div>
+                                        <div class="text-sm leading-sm text-secondary">
+                                            <div class="tabindex="-1">Floor: <span class="text-sm leading-sm text-secondary"><span>0.02 </span><span>ETH</span></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Kotak 8 -->
+                                <div class="box bg-white rounded-xl shadow-md overflow-hidden">
+                                    <!-- Konten kotak -->
+                                    <div class="p-4">
+                                        <div class="text-xs leading-xs font-semibold uppercase text-secondary text-center">
+                                            <div class="tabindex="-1">Background</div>
+                                        </div>
+                                        <div class="flex items-center justify-center">
+                                            <div class="text-sm leading-sm font-semibold max-w-[70%] py-1" data-testid="Property--value">
+                                                <div class="tabindex="-1">Arc</div>
+                                            </div>
+                                            <span class="text-sm leading-sm flex-none pl-1 text-secondary">100%</span>
+                                        </div>
+                                        <div class="text-sm leading-sm text-secondary">
+                                            <div class="tabindex="-1">Floor: <span class="text-sm leading-sm text-secondary"><span>0.02 </span><span>ETH</span></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Kotak 9 -->
+                                <div class="box bg-white rounded-xl shadow-md overflow-hidden">
+                                    <!-- Konten kotak -->
+                                    <div class="p-4">
+                                        <div class="text-xs leading-xs font-semibold uppercase text-secondary text-center">
+                                            <div class="tabindex="-1">Background</div>
+                                        </div>
+                                        <div class="flex items-center justify-center">
+                                            <div class="text-sm leading-sm font-semibold max-w-[70%] py-1" data-testid="Property--value">
+                                                <div class="tabindex="-1">Arc</div>
+                                            </div>
+                                            <span class="text-sm leading-sm flex-none pl-1 text-secondary">100%</span>
+                                        </div>
+                                        <div class="text-sm leading-sm text-secondary">
+                                            <div class="tabindex="-1">Floor: <span class="text-sm leading-sm text-secondary"><span>0.02 </span><span>ETH</span></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Kotak 10 -->
+                                <div class="box bg-white rounded-xl shadow-md overflow-hidden">
+                                    <!-- Konten kotak -->
+                                    <div class="p-4">
+                                        <div class="text-xs leading-xs font-semibold uppercase text-secondary text-center">
+                                            <div class="tabindex="-1">Background</div>
+                                        </div>
+                                        <div class="flex items-center justify-center">
+                                            <div class="text-sm leading-sm font-semibold max-w-[70%] py-1" data-testid="Property--value">
+                                                <div class="tabindex="-1">Arc</div>
+                                            </div>
+                                            <span class="text-sm leading-sm flex-none pl-1 text-secondary">100%</span>
+                                        </div>
+                                        <div class="text-sm leading-sm text-secondary">
+                                            <div class="tabindex="-1">Floor: <span class="text-sm leading-sm text-secondary"><span>0.02 </span><span>ETH</span></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-box max-w-md mx-auto bg-gray-200 shadow-md overflow-hidden" style="padding: 20px;">
+                    <div class="info-tittle2 flex border-b border-gray-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 0 1 0 3.75H5.625a1.875 1.875 0 0 1 0-3.75Z" />
+                        </svg>
+                        <h3 class="text-md leading-md font-semibold ml-4 mb-4" data-id="TextBody">About Si Juki : Lost in Jukiverse</h3>  
+                    </div>
+                    <div class="info-content2 p-4 border-b border-gray-300">
+                        <div aria-labelledby="Header assets-item-about-collection" class="Panel--body sc-beff130f-0 sc-45c68a3a-1 hksMfk CeZjf" id="Body assets-item-about-collection" role="region">
+                            <div class="Panel--content-container" style="height: initial;">
+                                <div class="Panel--isContentPadded">
+                                    <div class="item--about-container">
+                                        <div class="flex items-start">
+                                            <div class="flex sc-d712da22-2 eOUUfP">
+                                                <a class="no-underline cursor-pointer text-interactive-primary hover:text-interactive-primary-hover disabled:pointer-events-none disabled:opacity-40" href="/collection/castercats">
+                                                    <span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;">
+                                                        <span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;">
+                                                            <img alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2780%27%20height=%2780%27/%3e" style="display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;">
+                                                        </span>
+                                                        <img alt="Si Juki: Lost in Jukiverse collection image" srcset="https://i.seadn.io/gae/0swIAR7eYBOYUnT-04tE1T8yHO3E3QnSu_Gih3Z97QCAnfqONteVJ23SPx8jF8hdKynkYJMDR3mjKu2gYxlVQ7pi1v0stO_jnDQl?auto=format&amp;dpr=1&amp;w=128 1x, https://i.seadn.io/gae/0swIAR7eYBOYUnT-04tE1T8yHO3E3QnSu_Gih3Z97QCAnfqONteVJ23SPx8jF8hdKynkYJMDR3mjKu2gYxlVQ7pi1v0stO_jnDQl?auto=format&amp;dpr=1&amp;w=256 2x" src="https://i.seadn.io/gae/0swIAR7eYBOYUnT-04tE1T8yHO3E3QnSu_Gih3Z97QCAnfqONteVJ23SPx8jF8hdKynkYJMDR3mjKu2gYxlVQ7pi1v0stO_jnDQl?auto=format&amp;dpr=1&amp;w=256" decoding="async" data-nimg="intrinsic" class="sc-d712da22-1 gbWvUg" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;">
+                                                    </span>                                                    
+                                                </a>
+                                            </div>
+                                            <div class="flex flex-col ml-4">
+                                                <div class="[&amp;>*:mt-0]">
+                                                    <div class="sc-b700f7f0-0 dOpGyH">
+                                                        <p class="text-md leading-md mb-1.5 lg:mb-3 last:mb-0 whitespace-pre-wrap w-fit markdown-line" node="[object Object]" data-id="TextBody" style="text-align: justify;">
+                                                            Jukiverse is 3456 Jukis based on Indonesia comic character, Si Juki. Si Juki created and authored by Faza Meonk since 2010. Jukiverse is a bridge for IP Brand development from Web2 to Web3.
+                                                        </p>    
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="info-box max-w-md bg-gray-200 shadow-md overflow-hidden" style="padding-left: 20px; padding-left: 20px; border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;">
+                    <div class="info-tittle3 flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Zm6-10.125a1.875 1.875 0 1 1-3.75 0 1.875 1.875 0 0 1 3.75 0Zm1.294 6.336a6.721 6.721 0 0 1-3.17.789 6.721 6.721 0 0 1-3.168-.789 3.376 3.376 0 0 1 6.338 0Z" />
+                          </svg>                          
+                        <h3 class="text-md leading-md font-semibold ml-4 mb-4" data-id="TextBody">Details</h3>  
+                    </div>
+                    <div class="info-content3 p-4" style="border-top: 1px solid #ccc;">
+                        <div class="sc-beff130f-0 hksMfk">
+                            <div class="flex justify-between mt-2">Contract Address<span class="text-sm leading-sm sc-6454d681-0 bcNVND" data-id="TextBody"><a class="no-underline cursor-pointer text-interactive-primary hover:text-interactive-primary-hover disabled:pointer-events-none disabled:opacity-40" href="https://etherscan.io/address/0xf023ea03291313ad31c22db0f682228040af4d86" rel="nofollow noopener" target="_blank">0xf023...4d86</a></span></div>
+                            <div class="flex justify-between mt-2">Token ID<span class="text-sm leading-sm sc-6454d681-0 bcNVND" data-id="TextBody"><a class="no-underline cursor-pointer text-interactive-primary hover:text-interactive-primary-hover disabled:pointer-events-none disabled:opacity-40" href="http://metadata.jukiverse.com/373" rel="nofollow noopener" target="_blank">373</a></span></div>
+                            <div class="flex justify-between mt-2">Token Standard<span class="text-sm leading-sm sc-6454d681-0 bcNVND" data-id="TextBody">ERC-721</span></div>
+                            <div class="flex justify-between mt-2">Chain<span class="text-sm leading-sm sc-6454d681-0 bcNVND" data-id="TextBody">Ethereum</span></div>
+                            <div class="flex justify-between mt-2">
+                                <div class="flex items-center">
+                                    <div class="sc-beff130f-0 hksMfk mr-2">Creator Earnings</div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
+                                    </svg>
+                                      
+                                </div>
+                                <span class="text-sm leading-sm sc-6454d681-0 bcNVND" data-id="TextBody">5%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </div>
+
+        <!-- Konten samping -->
+        <aside class="w-full md:w-1/4 p-3">
+            <div class="item--aside">
+                <section class="item--header">
+                    <div class="item--collection-info flex justify-between">
+                        <div class="item--collection-detail">
+                            <div class="flex flex-col">
+                                <div class="creator flex">
+                                    <h1 class="font-bold mr-2">Si Juki : Lost in Jukiverse</h1>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="blue" class="w-6 h-6">
+                                        <path fill-rule="evenodd" d="M8.603 3.799A4.49 4.49 0 0 1 12 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 0 1 3.498 1.307 4.491 4.491 0 0 1 1.307 3.497A4.49 4.49 0 0 1 21.75 12a4.49 4.49 0 0 1-1.549 3.397 4.491 4.491 0 0 1-1.307 3.497 4.491 4.491 0 0 1-3.497 1.307A4.49 4.49 0 0 1 12 21.75a4.49 4.49 0 0 1-3.397-1.549 4.49 4.49 0 0 1-3.498-1.306 4.491 4.491 0 0 1-1.307-3.498A4.49 4.49 0 0 1 2.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 0 1 1.307-3.497 4.49 4.49 0 0 1 3.497-1.307Zm7.007 6.387a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item--collection-toolbar-wrapper">
+                            <div class="flex space-x-4">
+                                <span>
+                                    <a class="no-underline cursor-pointer text-interactive-primary hover:text-interactive-primary-hover disabled:pointer-events-none disabled:opacity-40"
+                                        aria-disabled="false">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z" />
+                                        </svg>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a class="no-underline cursor-pointer text-interactive-primary hover:text-interactive-primary-hover disabled:pointer-events-none disabled:opacity-40"
+                                        aria-disabled="false">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M9 8.25H7.5a2.25 2.25 0 0 0-2.25 2.25v9a2.25 2.25 0 0 0 2.25 2.25h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25H15m0-3-3-3m0 0-3 3m3-3V15" />
+                                        </svg>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a class="no-underline cursor-pointer text-interactive-primary hover:text-interactive-primary-hover disabled:pointer-events-none disabled:opacity-40"
+                                        aria-disabled="false">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                        </svg>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="flex items-center">
+                        <h1 class="sc-beff130f-0 kZpcNQ item--title font-bold" title="Caster Cats #3099"
+                            style="font-size: 35px;">JukiVerse #3099</h1>
+                    </div>
+                    <div class="sc-beff130f-0 iNoSgt">
+                        <div class="sc-beff130f-0 sc-b6bd9c33-1 inTdOL eXpLtk AccountLink--ellipsis-overflow">
+                            <h1>Owned by <span class="font-bold">kristin001</span></h1>
+                        </div>
+                    </div>
+                </section>
+                <br/>
+                <br/>
+                <section class="item--counts flex">
+                    <div class="flex justify-between" style="margin-right: 30px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6" style="margin-right: 5px;">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5-3.9 19.5m-2.1-19.5-3.9 19.5" />
+                        </svg>
+                        <p style="margin-left: 5px;">2534</p>
+                    </div>
+                    <div class="flex justify-between" style="margin-right: 30px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6" style="margin-right: 5px;">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                        </svg>                          
+                        <p style="margin-left: 5px;">300 views</p>
+                    </div>
+                    <div class="flex justify-between" style="margin-right: 30px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6" style="margin-right: 5px;">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                        </svg>                          
+                        <p style="margin-left: 5px;">258</p>
+                    </div>
+                    <div class="flex justify-between" style="margin-right: 30px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6" style="margin-right: 5px;">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 7.125C2.25 6.504 2.754 6 3.375 6h6c.621 0 1.125.504 1.125 1.125v3.75c0 .621-.504 1.125-1.125 1.125h-6a1.125 1.125 0 0 1-1.125-1.125v-3.75ZM14.25 8.625c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v8.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 0 1-1.125-1.125v-8.25ZM3.75 16.125c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v2.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 0 1-1.125-1.125v-2.25Z" />
+                        </svg>                          
+                        <p style="margin-left: 5px;">PFPs</p>
+                    </div>
+                </section>
+                <br/>
+                <div class="max-w-md mx-auto bg-gray-200 rounded-xl shadow-md overflow-hidden" style="padding: 20px;">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center">
+                            <div class="flex">
+                                <div class="text-md leading-md">
+                                    <span class="text-black">Sale ends</span>&nbsp;
+                                    <span class="text-black">April 28, 2024 at 3:18 PM</span>&nbsp;
+                                    <span class="text-primary"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap">
+                            <div class="Timer--time-unit mr-4">
+                                <div class="Timer--numbers text-red-500">00</div>
+                                <span class="text-sm leading-sm text-black">Hours</span>
+                            </div>
+                            <div class="Timer--time-unit mx-4">
+                                <div class="Timer--numbers text-red-500">04</div>
+                                <span class="text-sm leading-sm text-black">Minutes</span>
+                            </div>
+                            <div class="Timer--time-unit ml-4">
+                                <div class="Timer--numbers text-red-500">51</div>
+                                <span class="text-sm leading-sm text-black">Seconds</span>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="mt-6">
+                            <span class="text-sm leading-sm text-secondary">Current price</span>
+                            <div class="TradeStation--price-container mt-1 flex">
+                                <div class="Price--main TradeStation--price flex items-center">
+                                    <div class="Price--amount font-bold text-3xl" tabindex="-1">0.02 ETH</div>
+                                </div>
+                                <div class="TradeStation--fiat-price ml-4 flex items-center">
+                                    <div class="Price--fiat-amount Price--fiat-amount-secondary align-baseline" tabindex="-1">$66.40</div>
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="flex justify-between mt-4">
+                            <div class="flex-grow mr-2">
+                                <button type="button" class="inline-flex items-center justify-center w-full whitespace-nowrap transition duration-200 text-md leading-md font-semibold bg-blue-500 text-white hover:bg-blue-600 gap-3 rounded-xl px-6 py-3 disabled:pointer-events-none disabled:opacity-40">
+                                    Buy now
+                                </button>
+                            </div>
+                            <div class="flex-grow ml-2">
+                                <button type="button" class="inline-flex items-center justify-center w-full whitespace-nowrap transition duration-200 text-md leading-md font-semibold bg-black text-white hover:bg-gray-900 gap-3 rounded-xl px-6 py-3 disabled:pointer-events-none disabled:opacity-40">
+                                    Make offer
+                                </button>
+                            </div>                                                       
+                        </div>
+                    </div>
+                </div>
+                <div class="info-box max-w-md mx-auto bg-gray-200 shadow-md overflow-hidden mt-3" style="padding-left: 20px; padding-right: 20px; padding-top: 20px; border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;">
+                    <div class="info-tittle4 flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941" />
+                        </svg>
+                        <h3 class="text-md leading-md font-semibold ml-4 mb-8" data-id="TextBody">Price History</h3>
+                    </div>
+                    <div class="info-content4 p-4" style="border-top: 1px solid #ccc;">
+                        <div id="chart-container" class="h-96"></div>
+                    </div>
+                </div>
+                <div class="info-box max-w-md mx-auto bg-gray-200 shadow-md overflow-hidden mt-3" style="padding-left: 20px; padding-right: 20px; padding-top: 20px; border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;">
+                    <div class="info-tittle5 flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9.568 3H5.25A2.25 2.25 0 0 0 3 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 0 0 5.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 0 0 9.568 3Z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 6h.008v.008H6V6Z" />
+                          </svg>                          
+                        <h3 class="text-md leading-md font-semibold ml-4 mb-8" data-id="TextBody">Listing</h3>
+                    </div>
+                    <div>
+                        <div class="Panel--content-container" style="height: initial;">
+                            <div class="info-content5 p-4">
+                                <div class="flex flex-col mb-4">
+                                    <div class="w-full overflow-x-auto  rounded-md">
+                                      <table class="w-full text-left border-collapse">
+                                        <thead>
+                                          <tr class="text-xs font-medium text-gray-500 bg-gray-100 uppercase border-b border-gray-200">
+                                            <th class="px-4 py-2">Price</th>
+                                            <th class="px-4 py-2">USD Price</th>
+                                            <th class="px-4 py-2">Quantity</th>
+                                            <th class="px-4 py-2">Expiration</th>
+                                            <th class="px-4 py-2">From</th>
+                                            <th class="px-4 py-2"></th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr class="text-sm font-medium border-b border-gray-200 hover:bg-gray-100">
+                                            <td class="px-4 py-2">0.008 ETH</td>
+                                            <td class="px-4 py-2">$25.79</td>
+                                            <td class="px-4 py-2">1</td>
+                                            <td class="px-4 py-2">in 4 months</td>
+                                            <td class="px-4 py-2">BrandNewDraco99</td>
+                                            <td class="px-4 py-2">
+                                              <button type="button" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-500 rounded-lg hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 disabled:bg-gray-400 disabled:opacity-50">
+                                                Buy
+                                              </button>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+                <div class="info-box max-w-md mx-auto bg-gray-200 shadow-md overflow-hidden mt-3" style="padding-left: 20px; padding-right: 20px; padding-top: 20px; border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;">
+                    <div class="info-tittle6 flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0ZM3.75 12h.007v.008H3.75V12Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm-.375 5.25h.007v.008H3.75v-.008Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                          </svg>                                                   
+                        <h3 class="text-md leading-md font-semibold ml-4 mb-8" data-id="TextBody">Offers</h3>
+                    </div>
+                    <div>
+                        <div class="Panel--content-container" style="height: initial;">
+                            <div class="info-content6 p-4" style="display: flex; flex-direction: column; align-items: center;">
+                                <img src="https://opensea.io/static/images/empty-bids.svg" alt="">
+                                <h3 class="text-md leading-md font-semibold mt-4" data-id="TextBody">No offers yet</h3>
+                            </div>
+                        </div>                                               
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </main>
+    </div>
+    <div class="content-bawah" style="margin-left: 35px; margin-right: 35px;">
+        <div class="info-box max-w-md mx-auto bg-gray-200 shadow-md overflow-hidden" style="padding-left: 20px; padding-right: 20px; padding-top: 20px; border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;">
+            <div class="info-tittle7 flex">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.568 3H5.25A2.25 2.25 0 0 0 3 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 0 0 5.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 0 0 9.568 3Z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 6h.008v.008H6V6Z" />
+                  </svg>                          
+                <h3 class="text-md leading-md font-semibold ml-4 mb-8" data-id="TextBody">Listing</h3>
+            </div>
+            <div>
+                <div class="Panel--content-container" style="height: initial;">
+                    <div class="info-content7 p-4">
+                        <div class="flex flex-col mb-4">
+                            <table class="w-full text-left border-collapse">
+                                <thead>
+                                    <tr class="text-xs font-medium text-gray-500 bg-gray-100 uppercase border-b border-gray-200">
+                                        <th class="px-4 py-2">Event</th>
+                                        <th class="px-4 py-2">Price</th>
+                                        <th class="px-4 py-2">From</th>
+                                        <th class="px-4 py-2">To</th>
+                                        <th class="px-4 py-2">Date</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                            <div class="w-full overflow-x-auto overflow-y-auto rounded-md" style="max-height: 190px;"> <!-- Sesuaikan nilai max-height sesuai kebutuhan -->
+                                <table class="w-full text-left border-collapse">
+                                    <tbody>
+                                        <tr class="text-sm font-medium border-b border-gray-200 hover:bg-gray-100">
+                                          <td class="px-4 py-2">List</td>
+                                          <td class="px-4 py-2">0.008 ETH</td>
+                                          <td class="px-4 py-2">BrandNewDraco99</td>
+                                          <td class="px-4 py-2"></td>
+                                          <td class="px-4 py-2">2mo ago</td>
+                                        </tr>
+                                        <tr class="text-sm font-medium border-b border-gray-200 hover:bg-gray-100">
+                                          <td class="px-4 py-2">List</td>
+                                          <td class="px-4 py-2">0.0091 ETH</td>
+                                          <td class="px-4 py-2">BrandNewDraco99</td>
+                                          <td class="px-4 py-2"></td>
+                                          <td class="px-4 py-2">4mo ago</td>
+                                        </tr>
+                                        <tr class="text-sm font-medium border-b border-gray-200 hover:bg-gray-100">
+                                          <td class="px-4 py-2">List</td>
+                                          <td class="px-4 py-2">0.100 ETH</td>
+                                          <td class="px-4 py-2">BrandNewDraco99</td>
+                                          <td class="px-4 py-2"></td>
+                                          <td class="px-4 py-2">1y ago</td>
+                                        </tr>
+                                        <tr class="text-sm font-medium border-b border-gray-200 hover:bg-gray-100">
+                                          <td class="px-4 py-2">Transfer</td>
+                                          <td class="px-4 py-2"></td>
+                                          <td class="px-4 py-2">ProsperBow11</td>
+                                          <td class="px-4 py-2">BrandNewDraco99</td>
+                                          <td class="px-4 py-2">1y ago</td>
+                                        </tr>
+                                        <tr class="text-sm font-medium border-b border-gray-200 hover:bg-gray-100">
+                                          <td class="px-4 py-2">Transfer</td>
+                                          <td class="px-4 py-2"></td>
+                                          <td class="px-4 py-2">ProsperBow11</td>
+                                          <td class="px-4 py-2">BrandNewDraco99</td>
+                                          <td class="px-4 py-2">1y ago</td>
+                                        </tr>
+                                        <tr class="text-sm font-medium border-b border-gray-200 hover:bg-gray-100">
+                                          <td class="px-4 py-2">List</td>
+                                          <td class="px-4 py-2">0.235 ETH</td>
+                                          <td class="px-4 py-2">ProsperBow11</td>
+                                          <td class="px-4 py-2"></td>
+                                          <td class="px-4 py-2">2y ago</td>
+                                        </tr>
+                                      </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <br />
+    <br />
+    <br />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="jquery.js"></script>
+    <script src="swiper-bundle.min.js"></script>
+    <script src="/src/script.js"></script>
+    <script src="/node_modules/flowbite/dist/flowbite.min.js"></script>
+</body>
+
+</html>
