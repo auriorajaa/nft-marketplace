@@ -1,13 +1,16 @@
 .pay-button {
-  background-color: #e82b2b !important;
+  background-color: #f1f1f1 !important;
 }
 
 .pay-button:hover {
-  background-color: #e82b2bcb !important;
+  background-color: #d7d7d7b9 !important;
 }
 
 .pay-with-bitcoin {
   background-color: #ff9119 !important;
+}
+.pay-with-bitcoin:hover {
+  background-color: #ff9019b1 !important;
 }
 
 .make-offer {
@@ -27,4 +30,8 @@
 .swiper-button-next,
 .swiper-button-prev {
   color: black !important;
+}
+
+.breadcrumb:hover {
+  color: #e82b2b !important;
 }

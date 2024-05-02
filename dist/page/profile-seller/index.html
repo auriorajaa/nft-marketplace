@@ -5,9 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nusantara NFT</title>
-    <link rel="stylesheet" href="../../output.css" />
-    <link rel="stylesheet" href="../../../src/input.css" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/dist/output.css" />
+    <link rel="stylesheet" href="/src/input.css" />
+    <link rel="stylesheet" href="/dist/page/profile-seller/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
@@ -302,7 +302,7 @@
     <!-- CRYPTO PRICE MARQUEE SECTION STARTED -->
     <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"></script>
     <div id="coinmarketcap-widget-marquee" coins="1,1027,825,52,5426,74,1839,2010,3890,5805" currency="USD"
-        theme="light" transparent="false" show-symbol-logo="true" class="sticky top-[90px] z-50"></div>
+        theme="light" transparent="false" show-symbol-logo="true" class="sticky top-[72px] z-50"></div>
     <!-- CRYPTO PRICE MARQUEE SECTION STARTED -->
 
     <!-- SEARCH SECTION STARTED -->
@@ -379,7 +379,7 @@
                 <div class="main-profile">
                     <div class="profile-image"></div>
                     <div class="profile-names pt-5">
-                        <h1 class="username font-bold font-[secondFont] text-xl flex items-center">Karafuru <ion-icon
+                        <h1 class="username font-bold font-[secondFont] text-xl flex items-center">JukiVerse <ion-icon
                                 name="checkmark-circle" style="color: blue" class="ml-1"></ion-icon>
                         </h1>
                     </div>
@@ -392,10 +392,9 @@
     <div class="px-3">
         <div class="flex justify-between max-w-full flex-col lg:flex-row ">
             <div class="max-w-4xl">
-                <h5 class="text-lg font-normal">Karafuru is home to 5,555
-                    generative arts where colors reign supreme. Leave the drab reality and enter the world of Karafuru
-                    by
-                    Museum of Toys. Follow our social media to join the community!</h5>
+                <h5 class="text-lg font-normal">Jukiverse is 3456 Jukis based on Indonesia comic character, Si Juki. Si
+                    Juki created and authored by Faza Meonk since 2010. Jukiverse is a bridge for IP Brand development
+                    from Web2 to Web3.</h5>
             </div>
             <div class="flex-row flex gap-3 my-3 mr-5">
                 <ion-icon name="logo-twitter" class="text-2xl"></ion-icon>
@@ -440,8 +439,8 @@
 
     <div class=" flex flex-col lg:flex-row  p-3">
 
-        <div class=" flex items-center flex-row">
-            <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
+        <div class="flex items-center flex-row">
+            <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown-price"
                 class="button-price text-white  focus:ring-4 focus:outline-none  font-medium rounded-lg text-sm px-3 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                 type="button">Price low to high <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
@@ -451,25 +450,28 @@
             </button>
 
             <!-- Dropdown menu -->
-            <div id="dropdown"
+            <div id="dropdown-price"
                 class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
                 <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
                     <li>
                         <a href="#"
-                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Price
+                            high to low</a>
                     </li>
                     <li>
                         <a href="#"
-                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Recently
+                            listed</a>
                     </li>
                     <li>
                         <a href="#"
-                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Best
+                            offer</a>
                     </li>
                     <li>
                         <a href="#"
-                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign
-                            out</a>
+                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Most
+                            rare</a>
                     </li>
                 </ul>
             </div>
@@ -482,18 +484,41 @@
     <!-- PRICE HISTORY SECTION STARTED -->
     <div class="font-[secondFont] p-3">
         <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4">
+            <a href="/dist/page/detail-nft/index.html">
+                <div class="">
+                    <div class="flex">
+                        <div class="bg-white rounded-xl hover:scale-105 transition-all transform duration-500">
+                            <img class="w-80 object-cover rounded-md"
+                                src="https://i.seadn.io/gae/7eG1ARDkspDwD0amAWC5kcMlnJakHsopLIfde1rF1Ksxm52F5IGI6vXqOTreOdePI9KPo4dBC5GFwRxkmkp2JdMHCN7waOU8qpr9Ww?auto=format&dpr=1&w=384"
+                                alt="" />
+                            <div class="mt-2">
+                                <h1 class="text-xl font-bold ">Dr. Juki #76</h1>
+                                <div class="mt-4 mb-2 flex justify-between pr-2">
+                                    <div class="flex-col">
+                                        <h1 class="font-bold text-lg mb-2">0.05 ETH</h1>
+                                        <button class="block text-sm font-normal cursor-auto">
+                                            Last sale: 0.5 ETH
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
             <div class="">
                 <div class="flex">
-                    <div class="bg-white rounded-xl hover:scale-105 transition-all transform duration-500">
-                        <img class="w-64 object-cover rounded-md"
-                            src="https://images.unsplash.com/photo-1509223197845-458d87318791" alt="" />
+                    <div class=" bg-white rounded-xl hover:scale-105 transition-all transform duration-500">
+                        <img class="w-80 object-cover rounded-md"
+                            src="https://i.seadn.io/gae/TbNTmd0gju20lArrHcTFFz4jqoW9Z1BAEJUw25H_9vdGkabQ_6ZwfwSxH7CDpeFb73TNzUNwWxvLzMn1WmQBm-wRTHwwPZ7_e7nU?auto=format&dpr=1&w=384"
+                            alt="" />
                         <div class="mt-2">
-                            <h1 class="text-xl font-bold ">FriendSTER</h1>
+                            <h1 class="text-xl font-bold ">CosmoJuk</h1>
                             <div class="mt-4 mb-2 flex justify-between pr-2">
                                 <div class="flex-col">
-                                    <h1 class="font-bold text-lg mb-2">0.05 ETH</h1>
+                                    <h1 class="font-bold text-lg mb-2">1.05 ETH</h1>
                                     <button class="block text-sm font-normal cursor-auto">
-                                        Last sale: 0.5 ETH
+                                        Last sale: 1 ETH
                                     </button>
                                 </div>
                             </div>
@@ -504,15 +529,16 @@
             <div class="">
                 <div class="flex">
                     <div class=" bg-white rounded-xl hover:scale-105 transition-all transform duration-500">
-                        <img class="w-64 object-cover rounded-md"
-                            src="https://images.unsplash.com/photo-1509223197845-458d87318791" alt="" />
+                        <img class="w-80 object-cover rounded-md"
+                            src="https://i.seadn.io/gae/yjaiAb4znYxhvlWfszoTI_x9_o6_bai9Hiqkcqietls2IIWYNMsF63w0HB1q-z0k1DYskMKZeYVG_5W4av-AYs9x1LAefxWIs5RJBA?auto=format&dpr=1&w=384"
+                            alt="" />
                         <div class="mt-2">
-                            <h1 class="text-xl font-bold ">FriendSTER</h1>
+                            <h1 class="text-xl font-bold ">Cosmo Titan Juki</h1>
                             <div class="mt-4 mb-2 flex justify-between pr-2">
                                 <div class="flex-col">
-                                    <h1 class="font-bold text-lg mb-2">0.05 ETH</h1>
+                                    <h1 class="font-bold text-lg mb-2">3 ETH</h1>
                                     <button class="block text-sm font-normal cursor-auto">
-                                        Last sale: 0.5 ETH
+                                        Last sale: 2.5 ETH
                                     </button>
                                 </div>
                             </div>
@@ -523,15 +549,16 @@
             <div class="">
                 <div class="flex">
                     <div class=" bg-white rounded-xl hover:scale-105 transition-all transform duration-500">
-                        <img class="w-64 object-cover rounded-md"
-                            src="https://images.unsplash.com/photo-1509223197845-458d87318791" alt="" />
+                        <img class="w-80 object-cover rounded-md"
+                            src="https://i.seadn.io/gae/lN66l0snYZ9RULdV2oepRyKZb4qV2P2NaEsykwCRkYDuA4avJAUNiZvxI4AX_M7Bn-PwbR5QHHMmdmVZ2hB-1NRWslbdJYMDD660ew?auto=format&dpr=1&w=384"
+                            alt="" />
                         <div class="mt-2">
-                            <h1 class="text-xl font-bold ">FriendSTER</h1>
+                            <h1 class="text-xl font-bold ">FireJuk</h1>
                             <div class="mt-4 mb-2 flex justify-between pr-2">
                                 <div class="flex-col">
-                                    <h1 class="font-bold text-lg mb-2">0.05 ETH</h1>
+                                    <h1 class="font-bold text-lg mb-2">1.5 ETH</h1>
                                     <button class="block text-sm font-normal cursor-auto">
-                                        Last sale: 0.5 ETH
+                                        Last sale: 1.5 ETH
                                     </button>
                                 </div>
                             </div>
@@ -542,15 +569,16 @@
             <div class="">
                 <div class="flex">
                     <div class=" bg-white rounded-xl hover:scale-105 transition-all transform duration-500">
-                        <img class="w-64 object-cover rounded-md"
-                            src="https://images.unsplash.com/photo-1509223197845-458d87318791" alt="" />
+                        <img class="w-80 object-cover rounded-md"
+                            src="https://i.seadn.io/gae/5D7oZ-TNCX4pnNqqtAVg2_6bAi8wj4dd50B7smr1Cmm_YDhHGzFzKiqiSh_UnE2HgKI-vB5FDmU36847Z0My3BLyrvyPrOMmrNrzo8Q?auto=format&dpr=1&w=384"
+                            alt="" />
                         <div class="mt-2">
-                            <h1 class="text-xl font-bold ">FriendSTER</h1>
+                            <h1 class="text-xl font-bold ">ItaliJuk</h1>
                             <div class="mt-4 mb-2 flex justify-between pr-2">
                                 <div class="flex-col">
-                                    <h1 class="font-bold text-lg mb-2">0.05 ETH</h1>
+                                    <h1 class="font-bold text-lg mb-2">0.01 ETH</h1>
                                     <button class="block text-sm font-normal cursor-auto">
-                                        Last sale: 0.5 ETH
+                                        Last sale: 0.01 ETH
                                     </button>
                                 </div>
                             </div>
@@ -561,15 +589,16 @@
             <div class="">
                 <div class="flex">
                     <div class=" bg-white rounded-xl hover:scale-105 transition-all transform duration-500">
-                        <img class="w-64 object-cover rounded-md"
-                            src="https://images.unsplash.com/photo-1509223197845-458d87318791" alt="" />
+                        <img class="w-80 object-cover rounded-md"
+                            src="https://i.seadn.io/gae/ZwjU64lGg8VT2OopaIouVxXhYHwwX1fOAheRB5vxIOsuUysd-3TAtUxmETCBlfOIiq38ruh9W-NjJxRJP97Z_U1Md--fwMsrDfKcAO0?auto=format&dpr=1&w=384"
+                            alt="" />
                         <div class="mt-2">
-                            <h1 class="text-xl font-bold ">FriendSTER</h1>
+                            <h1 class="text-xl font-bold ">Jhorky God of Thunder</h1>
                             <div class="mt-4 mb-2 flex justify-between pr-2">
                                 <div class="flex-col">
-                                    <h1 class="font-bold text-lg mb-2">0.05 ETH</h1>
+                                    <h1 class="font-bold text-lg mb-2">0.9 ETH</h1>
                                     <button class="block text-sm font-normal cursor-auto">
-                                        Last sale: 0.5 ETH
+                                        Last sale: 1 ETH
                                     </button>
                                 </div>
                             </div>
@@ -580,13 +609,34 @@
             <div class="">
                 <div class="flex">
                     <div class=" bg-white rounded-xl hover:scale-105 transition-all transform duration-500">
-                        <img class="w-64 object-cover rounded-md"
-                            src="https://images.unsplash.com/photo-1509223197845-458d87318791" alt="" />
+                        <img class="w-80 object-cover rounded-md"
+                            src="https://i.seadn.io/gae/7xR1m4O1U8TtvVRm9ZRJG1OF6g-JJx95wIuQbBmHQZf3UrHbGl8cdb5ZhQsu7KNIUgSfShRgZDaflECKppbxhasfzYntl2UXudcjCAM?auto=format&dpr=1&w=384"
+                            alt="" />
                         <div class="mt-2">
-                            <h1 class="text-xl font-bold ">FriendSTER</h1>
+                            <h1 class="text-xl font-bold ">Jubarong</h1>
                             <div class="mt-4 mb-2 flex justify-between pr-2">
                                 <div class="flex-col">
-                                    <h1 class="font-bold text-lg mb-2">0.05 ETH</h1>
+                                    <h1 class="font-bold text-lg mb-2">3 ETH</h1>
+                                    <button class="block text-sm font-normal cursor-auto">
+                                        Last sale: 2.5 ETH
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="flex">
+                    <div class=" bg-white rounded-xl hover:scale-105 transition-all transform duration-500">
+                        <img class="w-80 object-cover rounded-md"
+                            src="https://i.seadn.io/gae/4PrA4cgsa11VW25PcqqXNCbXwDhNzQe0AOaByUkbvDYUaPiyisQJiRSi0XBQhU9OP-6ubf2hlor5hw9aQdyPyoRoNmxVEGZRe6XjKQ?auto=format&dpr=1&w=384"
+                            alt="" />
+                        <div class="mt-2">
+                            <h1 class="text-xl font-bold ">Juk-Kong</h1>
+                            <div class="mt-4 mb-2 flex justify-between pr-2">
+                                <div class="flex-col">
+                                    <h1 class="font-bold text-lg mb-2">1 ETH</h1>
                                     <button class="block text-sm font-normal cursor-auto">
                                         Last sale: 0.5 ETH
                                     </button>
@@ -819,9 +869,9 @@
 
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 
-    <script src="../../../node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="/node_modules/flowbite/dist/flowbite.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
-    <script src="script.js"></script>
+    <script src="/dist/page/profile-seller/script.js"></script>
 </body>
 
 </html>
