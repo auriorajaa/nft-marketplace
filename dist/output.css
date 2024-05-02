@@ -1331,6 +1331,14 @@ input:checked + .toggle-bg {
   top: 90px;
 }
 
+.top-\[80px\] {
+  top: 80px;
+}
+
+.top-\[70px\] {
+  top: 70px;
+}
+
 .z-0 {
   z-index: 0;
 }
@@ -2727,7 +2735,8 @@ body {
 }
 
 .swiper-button-next2,
-.swiper-button-prev2 {
+.swiper-button-prev2, .swiper-button-next3,
+.swiper-button-prev3 {
   color: black !important;
 }
 
@@ -3190,9 +3199,9 @@ body {
     padding: 1.25rem;
   }
 
-  .md\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
   .md\:text-8xl {
@@ -3304,9 +3313,9 @@ body {
     text-align: center;
   }
 
-  .lg\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
+  .lg\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
   .lg\:text-5xl {

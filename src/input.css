@@ -166,7 +166,8 @@ body {
 }
 
 .swiper-button-next2,
-.swiper-button-prev2 {
+.swiper-button-prev2, .swiper-button-next3,
+.swiper-button-prev3 {
   color: black !important;
 }
 

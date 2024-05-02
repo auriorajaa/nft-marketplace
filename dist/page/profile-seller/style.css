@@ -65,3 +65,11 @@
         margin-top: -30px;
     }
 }
+
+.button-price {
+    background-color: #E82B2B !important;
+}
+
+.button-price:hover {
+    background-color: #e82b2bcb !important;
+}
