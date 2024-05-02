@@ -3208,6 +3208,11 @@ body {
     font-size: 6rem;
     line-height: 1;
   }
+
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
 }
 
 @media (min-width: 1024px) {
