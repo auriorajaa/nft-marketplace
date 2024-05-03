@@ -138,49 +138,8 @@ if (
     chart.render();
 }
 
-$(".info-content2").hide(); // Sembunyikan semua info-content saat halaman dimuat
-  $(".info-content3").hide(); // Sembunyikan semua info-content saat halaman dimuat
-  $(".info-content5").hide(); // Sembunyikan semua info-content saat halaman dimuat
 
-  $(document).ready(function() {
-    $(".info-tittle").click(function() {
-      $(".info-content").slideToggle();
-    })
-  });
-
-  $(document).ready(function() {
-    $(".info-tittle2").click(function() {
-      $(".info-content2").slideToggle();
-    })
-  });
-
-  $(document).ready(function() {
-    $(".info-tittle3").click(function() {
-      $(".info-content3").slideToggle();
-    })
-  });
-  $(document).ready(function() {
-    $(".info-tittle4").click(function() {
-      $(".info-content4").slideToggle();
-    })
-  });
-  $(document).ready(function() {
-    $(".info-tittle5").click(function() {
-      $(".info-content5").slideToggle();
-    })
-  });
-  $(document).ready(function() {
-    $(".info-tittle6").click(function() {
-      $(".info-content6").slideToggle();
-    })
-  });
-  $(document).ready(function() {
-    $(".info-tittle7").click(function() {
-      $(".info-content7").slideToggle();
-    })
-  });
-
-  Highcharts.chart('chart-container', {
+Highcharts.chart('chart-container', {
     chart: {
         type: 'column', // Mengatur tipe grafik menjadi bar chart
         backgroundColor: 'rgba(229, 231, 235, 0.2)',
