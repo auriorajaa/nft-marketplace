@@ -587,71 +587,66 @@
     <!-- SEARCH SECTION ENDED -->
 
     <!-- PROFILE BANNER SECTION STARTED -->
-    <div class="container-profile ">
-        <div class="profile-card">
-            <div class="profile-header"><!-- profile header section -->
-                <div class="main-profile">
-                    <div class="profile-image"></div>
-                    <div class="profile-names pt-5">
-                        <h1 class="username font-bold font-[secondFont] text-xl flex items-center">JukiVerse <ion-icon
-                                name="checkmark-circle" style="color: blue" class="ml-1"></ion-icon>
+    <div class="profile-card">
+        <div class="profile-header"><!-- profile header section -->
+            <div class="main-profile justify-between pt-4">
+                <div class="profile-image"></div>
+                <div class="profile-names pt-5"><!-- Hapus flex justify-between di sini -->
+                    <div class="flex flex-col"><!-- Hapus max-w-full di sini -->
+                        <h1 class="username font-bold font-[secondFont] text-xl flex items-center">Si Juki : Lost in Jukiverse <ion-icon
+                            name="checkmark-circle" style="color: blue" class="ml-1"></ion-icon>
                         </h1>
-                    </div>
+                        <div class="desc max-w-4xl">
+                            <h5 class="text-lg font-normal">Jukiverse is 3456 Jukis based on Indonesia comic character, Si Juki. Si
+                                Juki created and authored by Faza Meonk since 2010. Jukiverse is a bridge for IP Brand development
+                                from Web2 to Web3.
+                            </h5>
+                        </div>
+                    </div> 
                 </div>
             </div>
         </div>
+        <div class="icon3 flex flex-row gap-3 my-3 justify-end" style="margin-right: 80px;"><!-- Memindahkan ikon ke sini -->
+            <ion-icon name="logo-twitter" class="text-2xl"></ion-icon>
+            <ion-icon name="logo-discord" class="text-2xl"></ion-icon>
+            <ion-icon name="globe" class="text-2xl"></ion-icon>
+        </div>
     </div>
+    
+    
 
 
     <div class="px-3">
-        <div class="flex justify-between max-w-full flex-col lg:flex-row ">
-            <div class="max-w-4xl">
-                <h5 class="text-lg font-normal">Jukiverse is 3456 Jukis based on Indonesia comic character, Si Juki. Si
-                    Juki created and authored by Faza Meonk since 2010. Jukiverse is a bridge for IP Brand development
-                    from Web2 to Web3.</h5>
+        <div class="kotak3-container">
+            <div class="kotak3 mt-4 flex flex-row items-center space-x-3 lg:ml-80 lg:flex-none">
+                <!-- Konten kotak -->
+                <a href="#" class="flex h-20 w-40 flex-col items-center justify-center rounded-md border border-dashed border-gray-200 transition-colors duration-100 ease-in-out hover:border-gray-400/80">
+                    <div class="flex flex-row items-center justify-center">
+                        <span class="font-bold text-lg">15 ETH</span>
+                    </div>
+                    <div class="mt-2 text-sm text-gray-800">Total Volume</div>
+                </a>
+                <!-- Projects -->
+                <a href="#" class="flex h-20 w-40 flex-col items-center justify-center rounded-md border border-dashed border-gray-200 transition-colors duration-100 ease-in-out hover:border-gray-400/80">
+                    <div class="flex flex-row items-center justify-center">
+                        <span class="font-bold text-lg">0.05 ETH</span>
+                    </div>
+                    <div class="mt-2 text-sm text-gray-800">Floor Price</div>
+                </a>
+                <!-- Projects -->
+                <a href="#" class="flex h-20 w-40 flex-col items-center justify-center rounded-md border border-dashed border-gray-200 transition-colors duration-100 ease-in-out hover:border-gray-400/80">
+                    <div class="flex flex-row items-center justify-center">
+                        <span class="font-bold text-lg">496</span>
+                    </div>
+                    <div class="mt-2 text-sm text-gray-800">Collections</div>
+                </a>
             </div>
-            <div class="flex-row flex gap-3 my-3 mr-5">
-                <ion-icon name="logo-twitter" class="text-2xl"></ion-icon>
-                <ion-icon name="logo-discord" class="text-2xl"></ion-icon>
-                <ion-icon name="globe" class="text-2xl"></ion-icon>
-            </div>
-        </div>
-
-        <div class="mt-4 flex flex-row items-center space-x-3">
-            <!-- Comments -->
-            <a href="#"
-                class="flex h-20 w-40 flex-col items-center justify-center rounded-md border border-dashed border-gray-200 transition-colors duration-100 ease-in-out hover:border-gray-400/80">
-                <div class="flex flex-row items-center justify-center">
-                    <span class="font-bold text-lg">15 ETH</span>
-                </div>
-
-                <div class="mt-2 text-sm text-gray-800">Total Volume</div>
-            </a>
-
-            <!-- Projects -->
-            <a href="#"
-                class="flex h-20 w-40 flex-col items-center justify-center rounded-md border border-dashed border-gray-200 transition-colors duration-100 ease-in-out hover:border-gray-400/80">
-                <div class="flex flex-row items-center justify-center">
-                    <span class="font-bold text-lg">0.05 ETH</span>
-                </div>
-
-                <div class="mt-2 text-sm text-gray-800">Floor Price</div>
-            </a>
-
-            <!-- Projects -->
-            <a href="#"
-                class="flex h-20 w-40 flex-col items-center justify-center rounded-md border border-dashed border-gray-200 transition-colors duration-100 ease-in-out hover:border-gray-400/80">
-                <div class="flex flex-row items-center justify-center">
-                    <span class="font-bold text-lg">496</span>
-                </div>
-
-                <div class="mt-2 text-sm text-gray-800">Collections</div>
-            </a>
         </div>
     </div>
+    
     <!-- PROFILE BANNER SECTION ENDED -->
 
-    <div class=" flex flex-col lg:flex-row  p-3">
+    <div class="dropd flex flex-col lg:flex-row  p-3">
 
         <div class="flex items-center flex-row">
             <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown-price"
@@ -693,10 +688,13 @@
 
     </div>
 
+    <br/>
     <hr class="border-2 mx-3">
+    <br/>
 
     <!-- PRICE HISTORY SECTION STARTED -->
-    <div class="font-[secondFont] p-3">
+    <!-- PRICE HISTORY SECTION STARTED -->
+    <div class="price-history font-[secondFont] p-3">
         <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4">
             <a href="/dist/page/detail-nft/index.html">
                 <div class="">
@@ -865,6 +863,7 @@
     </div>
 
     <!-- PRICE HISTORY SECTION ENDED -->
+    <!-- PRICE HISTORY SECTION ENDED -->
 
     <!-- FOOTER SECTION STARTED -->
     <footer class="bg-white">
@@ -1013,7 +1012,7 @@
 
                         <ul class="mt-6 space-y-4 text-sm">
                             <li>
-                                <a href="#" class="text-gray-700 transition hover:opacity-75">
+                                <a href="/dist/page/contact/index.html" class="text-gray-700 transition hover:opacity-75">
                                     Contact
                                 </a>
                             </li>

@@ -4143,8 +4143,33 @@ nav ul.slider {
     z-index: 50;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.35);
   }
+
+  .price-history{
+    margin-left: 0px;
+  }
+
+  .info-content {
+    display: none;
+  }
+
+  .contact-container {
+    padding: 20px;
+  }
 }
 
+@media screen and (max-width: 834px) {
+  .profile-card .icon3 {
+    display: none !important;
+  }
+
+  .price-history{
+    margin-left: 0px;
+  }
+
+  .desc.max-w-4xl {
+    max-width: 36rem; /* Sesuaikan dengan ukuran yang diinginkan untuk max-w-xl */
+  }
+}
 @media screen and (max-width: 653px) {
   nav ul {
     position: absolute;
@@ -4172,32 +4197,19 @@ nav ul.slider {
   }
 }
 
-@media screen and (max-width: 653px) {
-  nav ul {
-    position: absolute;
-    right: 0;
-    top: 12px;
-    margin-top: 84px;
-    padding: 30px;
-    width: 55%;
-    height: 100vh;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: column;
-    background-color: rgb(255, 255, 255);
-    z-index: -1;
-    transform: translateX(100%);
-    transition: all 1s;
-    opacity: 0;
-  }
+@media (min-width: 768px) {
+        .kotak3 {
+            margin-left: 80px;
+        }
 
-  nav ul.slider {
-    transform: translateX(0);
-    opacity: 1;
-    z-index: 50;
-    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.35);
-  }
-}
+        .dropd {
+          margin-left: 80px;
+        }
+
+        .price-history{
+          margin-left: 80px;
+        }
+    }
 
 @media screen and (max-width: 391px) {
   nav ul {
@@ -4223,6 +4235,68 @@ nav ul.slider {
     opacity: 1;
     z-index: 50;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.35);
+  }
+
+  .item--counts.flex {
+    flex-wrap: wrap; /* Mengatur agar item-item dalam flex container dapat melilit ke baris baru */
+    padding-left: 10px;
+
+  }
+
+  .item--header {
+    padding: 10px;
+  }
+
+  .info-content {
+    display: none;
+  }
+  .kotak3 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main-profile {
+    width: 100%; /* Melebarkan elemen h1 ke lebar penuh */
+  }
+
+  .profile-names {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Untuk membuat div ini menjadi ditengah */
+    align-items: flex-start; /* Pusatkan secara vertikal */
+  }
+
+  .desc {
+      text-align: justify; /* Teks h5 menjadi rata kiri-kanan */
+  }
+
+  .profile-card .icon3 {
+    display: none !important;
+  }
+  .image-content {
+    width: 100%;
+  }
+
+  .price-history{
+    margin-left: 0px;
+  }
+
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Jarak antar elemen */
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  .contact-info,
+  .contact-form {
+    width: 100%;
+  }
+
+  #gmap_canvas {
+    width: 100%; /* Mengisi lebar parent element */
+    height: 200px; /* Sesuaikan tinggi iframe */
   }
 }
 
@@ -4259,4 +4333,59 @@ aside {
   max-height: 300px;
   object-fit: cover;
   object-position: center 23%;
+}
+
+/*Contact*/
+#contact {
+  padding: 80px 0;
+}
+
+.contact-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contact-info,
+.contact-form {
+  flex-basis: 48%;
+}
+
+.contact-info h2,
+.contact-form h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.contact-form textarea {
+  height: 120px;
+}
+
+.contact-form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
 }
